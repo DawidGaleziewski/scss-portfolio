@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-animation",
+  "version": "1.0.0",
+  "description": "My main portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dawid Gałęziewski",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

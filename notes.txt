@@ -1,0 +1,35 @@
+#style reset with normalize.css
+#fonts from fontello
+
+#init gulp
+npm init
+npm install gulp --save-dev
+npm install gulp-sass --save-dev
+gulp watch
+
+#structure
+NAVIGATION START
+NAVIGATION END
+
+HEADER START
+HEADER END
+
+SECTION-INTRO START
+SECTION-INTRO END
+
+SECTION-INTRO START
+SECTION-INTRO END
+
+SECTION-INTRO START
+SECTION-INTRO END
+
+MEDIA START
+MEDIA END
+
+FOOTER START
+FOOTER END
+
+
+#parametters
+colors:
+
