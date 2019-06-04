@@ -1,0 +1,61 @@
+@import '../elements/buttons';
+
+/* MAIN-HEADER START */
+.main-header {
+	padding-top: 5.375rem;
+	background-color: #242938;
+	color: white;
+    text-align: center;
+    
+    &__title {
+        font-size: 3rem;
+        font-weight: normal;
+
+        &--decor {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    &__ribbon {
+        position: relative;
+        background-color: #34709e;
+        font-weight: normal;
+        width: 30rem;
+        height: 3rem;
+        margin: 2rem auto;
+        vertical-align: middle;
+        line-height: 3rem;
+
+        &::after{
+            right: 0;
+            top:0;
+            position: absolute;
+            content: '';
+            border-style: solid;
+            border-width: 1.5rem 1.5rem 1.5rem 0;
+            border-color: transparent #242938 transparent transparent;
+        }
+
+        &::before{
+            left: 0;
+            top:0;
+            position: absolute;
+            content: '';
+            border-style: solid;
+            border-width: 1.5rem 0 1.5rem 1.5rem;
+            border-color: transparent transparent transparent #242938 ;
+        }
+    }
+
+    .btn {
+        @include button-theme(#1cb890, #179172, #15775e);
+    }
+
+
+    &__image {
+        transform: translateY(4rem)
+    }
+}
+
+/* MAIN-HEADER END */

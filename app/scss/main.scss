@@ -1,4 +1,6 @@
 @import 'global/variables';
+@import './layout/navbar';
+@import './layout/header';
 
 
 /* GENERAL STYLES START */
@@ -10,7 +12,7 @@
 }
 
 html {
-    overflow-X: hidden;
+	overflow-X: hidden;
 }
 
 body {
@@ -27,91 +29,6 @@ h1, h2, p, ul, li, ol {
 /* GENERAL STYLES END */
 
 
-@import './layout/navbar';
-
-
-
-
-
-
-
-
-/* MAIN-HEADER START */
-.main-header {
-	padding-top: 5.375rem;
-	background-color: #242938;
-	color: white;
-	text-align: center;
-}
-
-.main-header__title {
-	font-size: 3rem;
-	font-weight: normal;
-}
-
-.main-header__title--decor {
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.main-header__ribbon{
-	position: relative;
-	background-color: #34709e;
-	font-weight: normal;
-	width: 30rem;
-	height: 3rem;
-	margin: 2rem auto;
-	vertical-align: middle;
-	line-height: 3rem;
-}
-
-.main-header__ribbon::after {
-	right: 0;
-	top:0;
-	position: absolute;
-	content: '';
-	border-style: solid;
-	border-width: 1.5rem 1.5rem 1.5rem 0;
-	border-color: transparent #242938 transparent transparent;
-}
-
-.main-header__ribbon::before {
-	left: 0;
-	top:0;
-	position: absolute;
-	content: '';
-	border-style: solid;
-	border-width: 1.5rem 0 1.5rem 1.5rem;
-	border-color: transparent transparent transparent #242938 ;
-}
-
-.main-header .btn {
-	cursor: pointer;
-	background-color: #1cb890;
-	border-bottom: 3px solid #179172;
-	border-right: 3px solid #15775e;
-	text-transform: uppercase;
-	font-weight: bold;	
-	padding: 1rem 1.5rem;
-	border-radius: 3px;
-	display: block;
-	width: 10rem;
-	margin: 2rem auto;
-	transition: background-color 0.5s ease-out, color 0.5s ease-out
-	
-}
-
-.main-header .btn:hover,
-.main-header .btn:active {
-	background-color: #15775e;
-	border-bottom: 3px solid #15775e;
-}
-
-
-.main-header__image {
-	transform: translateY(4rem)
-}
-/* MAIN-HEADER END */
 
 
 
