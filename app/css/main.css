@@ -163,13 +163,15 @@
     position: relative;
     background-color: #34709e;
     font-weight: normal;
+    font-size: 1rem;
+    max-width: 95%;
     width: 30rem;
     height: 3rem;
     margin: 2rem auto;
     vertical-align: middle;
     line-height: 3rem; }
     .main-header__ribbon::after {
-      right: 0;
+      right: -1px;
       top: 0;
       position: absolute;
       content: '';
@@ -177,7 +179,7 @@
       border-width: 1.5rem 1.5rem 1.5rem 0;
       border-color: transparent #242938 transparent transparent; }
     .main-header__ribbon::before {
-      left: 0;
+      left: -1px;
       top: 0;
       position: absolute;
       content: '';
@@ -228,8 +230,8 @@ h1, h2, p, ul, li, ol {
 /* ABOUT START */
 .about {
   padding: 5rem 5rem 0 5rem;
-  background-color: #fff;
-  color: #242938;
+  background-color: #d64e42;
+  color: #f2f3f8;
   text-align: center; }
 
 .about__title {
