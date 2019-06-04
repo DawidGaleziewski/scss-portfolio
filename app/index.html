@@ -32,6 +32,11 @@
 		</div>
 	</nav>
 
+
+
+
+
+
 	<header class="main-header">
 			<h1 class = "main-header__title">
 				Say hello to 
@@ -45,10 +50,14 @@
 	</header>
 
 
+
+
+
+
 	<section class= "about">
 		
-		<h2 class = "about__title"> 
-			<span class="about__title--decor">what is</span> 
+		<h2 class = "title"> 
+			<span class="title--decor">what is</span> 
 			company name
 		</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -65,27 +74,33 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</section>
 
-	<script>
 
-		const btnBurger = document.getElementById('nav-top-burger');
-		btnBurger.addEventListener('click', ()=> {
-			
-			const menu = document.getElementById('nav-menu');
-			const menuItems = document.querySelectorAll('.menu .menu__item');
-			let fadeInTime
-			menu.classList.toggle('toggle-mobile-nav');
-			btnBurger.classList.toggle('menu-mobile__burger--toggled');
 
-			menuItems.forEach((menuItem,index)=> {
-				if(menuItem.style.animation){
-					menuItem.style.animation= '';
-				} else{
-					menuItem.style.animation = `linkFading 0.5s ease forwards ${index /7 + 1}s`;
-				}
-            });
-			
-		})
-	</script>
+
+	<section class="projects">
+		<h2 class = "title">	
+			<span class="title--decor">
+				My	
+			</span>
+			projects
+		</h2>
+
+		<div class="gallery">
+			<div class="gallery__description">
+				<h3 class="title">Lorem ipsum</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, dolores!</p>
+			</div>
+			<div class="gallery__heroku">
+				<a class ="link" href="#">View site</a>
+			</div>
+			<div class="gallery__git">
+				<a class ="link" href="#">See code</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- MENU LOGIC -->
+	<script src="./js/menu.js"></script>
 <body>
     
 </body>

@@ -207,6 +207,53 @@
     transform: translateY(4rem); }
 
 /* MAIN-HEADER END */
+.about, .projects {
+  padding: 5rem;
+  text-align: center; }
+  .about .title, .projects .title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+    .about .title--decor, .projects .title--decor {
+      font-size: 2rem; }
+
+/* ABOUT START */
+.about {
+  background-color: #d64e42;
+  color: #f2f3f8; }
+
+/* ABOUT END*/
+.projects {
+  background-color: #f2f3f8;
+  color: #242938;
+  padding-left: 0;
+  padding-right: 0; }
+  .projects .title {
+    margin: 0 5rem; }
+  .projects .gallery__description {
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 5rem;
+    margin-top: 5rem; }
+    .projects .gallery__description .title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+  .projects .gallery__heroku {
+    padding: 2.5rem;
+    background-color: #9a74ce; }
+    .projects .gallery__heroku .link {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none; }
+  .projects .gallery__git {
+    padding: 2.5rem;
+    background-color: #1cb890; }
+    .projects .gallery__git .link {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none; }
+
 /* GENERAL STYLES START */
 *,
 *:after,
@@ -227,19 +274,3 @@ h1, h2, p, ul, li, ol {
   padding: 0; }
 
 /* GENERAL STYLES END */
-/* ABOUT START */
-.about {
-  padding: 5rem 5rem 0 5rem;
-  background-color: #d64e42;
-  color: #f2f3f8;
-  text-align: center; }
-
-.about__title {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem; }
-
-.about__title--decor {
-  font-size: 2rem; }
-
-/* ABOUT END*/
