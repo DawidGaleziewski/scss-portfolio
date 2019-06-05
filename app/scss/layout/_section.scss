@@ -27,7 +27,7 @@
 
 
 
-
+/* PROJECTS START */
 .projects{
     @extend %section;
 
@@ -47,6 +47,11 @@
         margin-top: 2.5rem;
         display: flex;
         flex-wrap: wrap;
+
+        @media(min-width: 40rem){
+            flex-direction: column;
+            height: 50rem;
+        }
         
 
         &__description{
@@ -58,6 +63,11 @@
             .title {
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
+            }
+
+            @media(min-width: 40rem){
+                width: 50vw;
+                height: 100%;
             }
         }
 
@@ -71,7 +81,12 @@
                 text-decoration: none;
                 .icon {
                     width: 85%;
+                    height: 100%;
                 }
+            }
+
+            @media(min-width: 40rem){
+                height: 50%;
             }
         }
 
@@ -85,8 +100,25 @@
                 text-decoration: none;
                 .icon {
                     width: 100%;
+                    height: 100%;
                 }
+            }
+
+            @media(min-width: 40rem){
+                height: 50%;
             }
         }
     }
 }
+/* PROJECTS END */
+
+
+
+
+/* PROJECTS START*/
+.contact {
+    @extend %section;
+    background-color: #34709e;
+    color: #fff;
+}
+/* PROJECTS END*/

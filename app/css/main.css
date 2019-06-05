@@ -207,14 +207,14 @@
     transform: translateY(4rem); }
 
 /* MAIN-HEADER END */
-.about, .projects {
+.about, .projects, .contact {
   padding: 5rem;
   text-align: center; }
-  .about .title, .projects .title {
+  .about .title, .projects .title, .contact .title {
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1rem; }
-    .about .title--decor, .projects .title--decor {
+    .about .title--decor, .projects .title--decor, .contact .title--decor {
       font-size: 2rem; }
 
 /* ABOUT START */
@@ -223,6 +223,7 @@
   color: #f2f3f8; }
 
 /* ABOUT END*/
+/* PROJECTS START */
 .projects {
   background-color: #f2f3f8;
   color: #242938;
@@ -235,6 +236,10 @@
     margin-top: 2.5rem;
     display: flex;
     flex-wrap: wrap; }
+    @media (min-width: 40rem) {
+      .projects .gallery {
+        flex-direction: column;
+        height: 50rem; } }
     .projects .gallery__description {
       background-color: #fff;
       width: 100%;
@@ -243,6 +248,10 @@
       .projects .gallery__description .title {
         font-size: 1.5rem;
         margin-bottom: 1rem; }
+      @media (min-width: 40rem) {
+        .projects .gallery__description {
+          width: 50vw;
+          height: 100%; } }
     .projects .gallery__heroku {
       width: 50%;
       padding: 2.5rem;
@@ -252,7 +261,11 @@
         font-size: 1.5rem;
         text-decoration: none; }
         .projects .gallery__heroku .link .icon {
-          width: 85%; }
+          width: 85%;
+          height: 100%; }
+      @media (min-width: 40rem) {
+        .projects .gallery__heroku {
+          height: 50%; } }
     .projects .gallery__git {
       width: 50%;
       padding: 2.5rem;
@@ -262,8 +275,19 @@
         font-size: 1.5rem;
         text-decoration: none; }
         .projects .gallery__git .link .icon {
-          width: 100%; }
+          width: 100%;
+          height: 100%; }
+      @media (min-width: 40rem) {
+        .projects .gallery__git {
+          height: 50%; } }
 
+/* PROJECTS END */
+/* PROJECTS START*/
+.contact {
+  background-color: #34709e;
+  color: #fff; }
+
+/* PROJECTS END*/
 /* GENERAL STYLES START */
 *,
 *:after,
