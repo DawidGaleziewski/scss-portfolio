@@ -229,30 +229,40 @@
   padding-left: 0;
   padding-right: 0; }
   .projects .title {
-    margin: 0 5rem; }
-  .projects .gallery__description {
-    background-color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 5rem;
-    margin-top: 5rem; }
-    .projects .gallery__description .title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem; }
-  .projects .gallery__heroku {
-    padding: 2.5rem;
-    background-color: #9a74ce; }
-    .projects .gallery__heroku .link {
-      color: #fff;
-      font-size: 1.5rem;
-      text-decoration: none; }
-  .projects .gallery__git {
-    padding: 2.5rem;
-    background-color: #1cb890; }
-    .projects .gallery__git .link {
-      color: #fff;
-      font-size: 1.5rem;
-      text-decoration: none; }
+    margin: 0 5rem;
+    margin-bottom: 2.5rem; }
+  .projects .gallery {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .projects .gallery__description {
+      background-color: #fff;
+      width: 100%;
+      margin: 0;
+      padding: 5rem; }
+      .projects .gallery__description .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+    .projects .gallery__heroku {
+      width: 50%;
+      padding: 2.5rem;
+      background-color: #9a74ce; }
+      .projects .gallery__heroku .link {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none; }
+        .projects .gallery__heroku .link .icon {
+          width: 85%; }
+    .projects .gallery__git {
+      width: 50%;
+      padding: 2.5rem;
+      background-color: #1cb890; }
+      .projects .gallery__git .link {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none; }
+        .projects .gallery__git .link .icon {
+          width: 100%; }
 
 /* GENERAL STYLES START */
 *,
