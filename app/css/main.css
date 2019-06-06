@@ -207,14 +207,14 @@
     transform: translateY(4rem); }
 
 /* MAIN-HEADER END */
-.about, .projects, .contact {
+.about, .contact {
   padding: 5rem;
   text-align: center; }
-  .about .title, .projects .title, .contact .title {
+  .about .title, .contact .title {
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1rem; }
-    .about .title--decor, .projects .title--decor, .contact .title--decor {
+    .about .title--decor, .contact .title--decor {
       font-size: 2rem; }
 
 /* ABOUT START */
@@ -224,63 +224,6 @@
 
 /* ABOUT END*/
 /* PROJECTS START */
-.projects {
-  background-color: #f2f3f8;
-  color: #242938;
-  padding-left: 0;
-  padding-right: 0; }
-  .projects .title {
-    margin: 0 5rem;
-    margin-bottom: 2.5rem; }
-  .projects .gallery {
-    margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap; }
-    @media (min-width: 40rem) {
-      .projects .gallery {
-        flex-direction: column;
-        height: 50rem; } }
-    .projects .gallery__description {
-      background-color: #fff;
-      width: 100%;
-      margin: 0;
-      padding: 5rem; }
-      .projects .gallery__description .title {
-        font-size: 1.5rem;
-        margin-bottom: 1rem; }
-      @media (min-width: 40rem) {
-        .projects .gallery__description {
-          width: 50vw;
-          height: 100%; } }
-    .projects .gallery__heroku {
-      width: 50%;
-      padding: 2.5rem;
-      background-color: #9a74ce; }
-      .projects .gallery__heroku .link {
-        color: #fff;
-        font-size: 1.5rem;
-        text-decoration: none; }
-        .projects .gallery__heroku .link .icon {
-          width: 85%;
-          height: 100%; }
-      @media (min-width: 40rem) {
-        .projects .gallery__heroku {
-          height: 50%; } }
-    .projects .gallery__git {
-      width: 50%;
-      padding: 2.5rem;
-      background-color: #1cb890; }
-      .projects .gallery__git .link {
-        color: #fff;
-        font-size: 1.5rem;
-        text-decoration: none; }
-        .projects .gallery__git .link .icon {
-          width: 100%;
-          height: 100%; }
-      @media (min-width: 40rem) {
-        .projects .gallery__git {
-          height: 50%; } }
-
 /* PROJECTS END */
 /* PROJECTS START*/
 .contact {
@@ -288,6 +231,94 @@
   color: #fff; }
 
 /* PROJECTS END*/
+.about, .contact {
+  padding: 5rem;
+  text-align: center; }
+  .about .title, .contact .title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+    .about .title--decor, .contact .title--decor {
+      font-size: 2rem; }
+
+/* ABOUT START */
+.about {
+  background-color: #d64e42;
+  color: #f2f3f8; }
+
+/* ABOUT END*/
+/* PROJECTS START */
+/* PROJECTS END */
+/* PROJECTS START*/
+.contact {
+  background-color: #34709e;
+  color: #fff; }
+
+/* PROJECTS END*/
+.projects .title {
+  margin-bottom: 2.5rem; }
+
+.projects .projects-wrapper {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto; }
+  .projects .projects-wrapper .project {
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    background-color: #1b6160;
+    opacity: 0; }
+  .projects .projects-wrapper .folder {
+    width: 80vw;
+    height: 40vw;
+    top: 0;
+    position: absolute; }
+    .projects .projects-wrapper .folder .folder-cover {
+      border-radius: 0 0 5px 5px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #259B9A;
+      transition: transform 1s, box-shadow 0.5s; }
+    .projects .projects-wrapper .folder .folder-background {
+      z-index: -1;
+      border-radius: 0 0 5px 5px;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      background-color: #1b6160; }
+      .projects .projects-wrapper .folder .folder-background::after {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 50px;
+        top: -50px;
+        right: 0;
+        border-radius: 5px 5px 0 0;
+        background-color: #1b6160; }
+
+@keyframes show-section {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes open-folder {
+  0% {
+    transform: translate(0px, 0px) skew(0deg) scale(1, 1); }
+  90% {
+    transform: translate(-10px, 15px) skew(10deg) scale(1, 0.9);
+    transition: transform 1s, box-shadow 0.5s;
+    -webkit-box-shadow: 2px -44px 28px -6px rgba(240, 231, 60, 0.7);
+    -moz-box-shadow: 2px -44px 28px -6px rgba(240, 231, 60, 0.7);
+    box-shadow: 2px -44px 28px -6px rgba(240, 231, 60, 0.7);
+    transform: translate(-25px, 15px) skew(10deg) scale(1, 0.9);
+    transition: transform 1s, box-shadow 0.5s; }
+  100% {
+    transform: translate(0px, 0px) skew(0deg) scale(1, 1); } }
+
 /* GENERAL STYLES START */
 *,
 *:after,

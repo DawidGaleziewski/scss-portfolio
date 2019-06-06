@@ -28,88 +28,88 @@
 
 
 /* PROJECTS START */
-.projects{
-    @extend %section;
+// .projects{
+//     @extend %section;
 
-    .title {
-        margin: 0 5rem;
-        margin-bottom:2.5rem;
-    }
+//     .title {
+//         margin: 0 5rem;
+//         margin-bottom:2.5rem;
+//     }
 
 
 
-    background-color: #f2f3f8;
-    color: #242938;
-    padding-left: 0;
-    padding-right: 0;
+//     background-color: #f2f3f8;
+//     color: #242938;
+//     padding-left: 0;
+//     padding-right: 0;
 
-    .gallery {
-        margin-top: 2.5rem;
-        display: flex;
-        flex-wrap: wrap;
+//     .gallery {
+//         margin-top: 2.5rem;
+//         display: flex;
+//         flex-wrap: wrap;
 
-        @media(min-width: 40rem){
-            flex-direction: column;
-            height: 50rem;
-        }
+//         @media(min-width: 40rem){
+//             flex-direction: column;
+//             height: 50rem;
+//         }
         
 
-        &__description{
-            background-color: #fff;
-            width: 100%;
-            margin: 0;
-            padding: 5rem;
+//         &__description{
+//             background-color: #fff;
+//             width: 100%;
+//             margin: 0;
+//             padding: 5rem;
 
-            .title {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
+//             .title {
+//                 font-size: 1.5rem;
+//                 margin-bottom: 1rem;
+//             }
 
-            @media(min-width: 40rem){
-                width: 50vw;
-                height: 100%;
-            }
-        }
+//             @media(min-width: 40rem){
+//                 width: 50vw;
+//                 height: 100%;
+//             }
+//         }
 
-        &__heroku {
-            width: 50%;
-            padding: 2.5rem;
-            background-color: #9a74ce;
-            .link {
-                color: #fff;
-                font-size: 1.5rem;
-                text-decoration: none;
-                .icon {
-                    width: 85%;
-                    height: 100%;
-                }
-            }
+//         &__heroku {
+//             width: 50%;
+//             padding: 2.5rem;
+//             background-color: #9a74ce;
+//             .link {
+//                 color: #fff;
+//                 font-size: 1.5rem;
+//                 text-decoration: none;
+//                 .icon {
+//                     width: 85%;
+//                     height: 100%;
+//                 }
+//             }
 
-            @media(min-width: 40rem){
-                height: 50%;
-            }
-        }
+//             @media(min-width: 40rem){
+//                 height: 50%;
+//             }
+//         }
 
-        &__git {
-            width: 50%;
-            padding: 2.5rem;
-            background-color: #1cb890;
-            .link {
-                color: #fff;
-                font-size: 1.5rem;
-                text-decoration: none;
-                .icon {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
+//         &__git {
+//             width: 50%;
+//             padding: 2.5rem;
+//             background-color: #1cb890;
+//             .link {
+//                 color: #fff;
+//                 font-size: 1.5rem;
+//                 text-decoration: none;
+//                 .icon {
+//                     width: 100%;
+//                     height: 100%;
+//                 }
+//             }
 
-            @media(min-width: 40rem){
-                height: 50%;
-            }
-        }
-    }
-}
+//             @media(min-width: 40rem){
+//                 height: 50%;
+//             }
+//         }
+//     }
+// }
 /* PROJECTS END */
 
 
