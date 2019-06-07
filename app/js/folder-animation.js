@@ -35,5 +35,15 @@ const fadeInSections = (sections) => {
         section.style.animation =`show-section 1s ease-in forwards ${index * 0.5}s`;
     })
 }
-  
-  startFolderAnimation()
+
+
+  // liten for scroll position to trigger animation
+  window.addEventListener('scroll', (event)=>{
+    let animationStartPosition = document.querySelector('.projects-wrapper').scrollHeight + document.querySelector('.projects-wrapper').offsetHeight;
+    // console.log(`Window position is ${window.scrollY},, scroll position is ${animationStartPosition}`);
+
+    if(window.scrollY >= animationStartPosition){
+      startFolderAnimation();
+    }
+
+  })

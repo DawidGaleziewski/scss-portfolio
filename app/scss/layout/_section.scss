@@ -20,7 +20,7 @@
 .about {
     @extend %section;
 	background-color: #d64e42;
-	color: #f2f3f8;
+    color: #f2f3f8;
 }
 /* ABOUT END*/
 
@@ -120,5 +120,6 @@
     @extend %section;
     background-color: #34709e;
     color: #fff;
+    margin-top: 40vh;
 }
 /* PROJECTS END*/
