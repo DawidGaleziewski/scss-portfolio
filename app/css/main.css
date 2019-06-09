@@ -225,15 +225,6 @@
   color: #f2f3f8; }
 
 /* ABOUT END*/
-/* PROJECTS START */
-/* PROJECTS END */
-/* PROJECTS START*/
-.contact {
-  background-color: #34709e;
-  color: #fff;
-  margin-top: 40vh; }
-
-/* PROJECTS END*/
 .about, .contact {
   padding: 5rem;
   text-align: center; }
@@ -250,15 +241,6 @@
   color: #f2f3f8; }
 
 /* ABOUT END*/
-/* PROJECTS START */
-/* PROJECTS END */
-/* PROJECTS START*/
-.contact {
-  background-color: #34709e;
-  color: #fff;
-  margin-top: 40vh; }
-
-/* PROJECTS END*/
 .projects .title {
   margin-bottom: 2.5rem;
   font-size: 3rem;
@@ -405,6 +387,51 @@
   100% {
     transform: translate(0px, 0px) skew(0deg) scale(1, 1); } }
 
+/* PROJECTS START*/
+.contact {
+  padding: 5rem 0;
+  background-color: #34709e;
+  color: #fff;
+  margin-top: 40vh; }
+  .contact-form {
+    margin: 0 2rem;
+    width: 80vw; }
+    .contact-form__input {
+      border: none;
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem;
+      border-right: 3px solid #242938;
+      border-bottom: 3px solid #242938;
+      font-size: 1.5rem; }
+      .contact-form__input::placeholder {
+        color: #242938;
+        font-weight: bold; }
+      .contact-form__input:focus {
+        color: #fff;
+        background-color: #242938; }
+    .contact-form .btn {
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      color: #fff;
+      background-color: #1cb890;
+      border-bottom: 3px solid #179172;
+      border-right: 3px solid #15775e;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 1rem 1.5rem;
+      border-radius: 3px;
+      display: block;
+      width: 10rem;
+      margin: 2rem auto;
+      transition: background-color 0.5s ease-out, color 0.5s ease-out; }
+      .contact-form .btn:active {
+        background-color: #15775e;
+        border-bottom: 3px solid #15775e;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out; }
+
+/* PROJECTS END*/
 /* GENERAL STYLES START */
 *,
 *:after,
