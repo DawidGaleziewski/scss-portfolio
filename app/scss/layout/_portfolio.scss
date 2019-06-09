@@ -1,4 +1,5 @@
 @import './section';
+@import '../elements/buttons';
 
 $color-folder-primary: #242938;
 $color-folder-secondary: #34709e;
@@ -22,12 +23,45 @@ $color-folder-secondary: #34709e;
         margin: 0 auto;
 
         .project {
+            padding: 1rem;
             position: relative;
             width: 100%;
-            height: 40vw;
             background-color: $color-folder-primary;
+            color: #fff;
             opacity: 0;
             margin-bottom: 1px;
+
+            &__title{
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            &__description {
+                font-size: 1.5rem;
+            }
+            .stack-list {
+                margin-top: 1rem;
+                list-style: none;
+
+                &__item {
+                    margin-left: 1rem;
+
+                    &--decor {
+                        text-decoration: underline;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+
+            .media {
+                .btn-git {
+                    @include button-theme(#1cb890, #179172, #15775e);
+                }
+
+                .btn-heroku {
+                    @include button-theme(#1cb890, #179172, #15775e);
+                }
+            }
         }
 
         .folder {
@@ -37,12 +71,22 @@ $color-folder-secondary: #34709e;
             position: absolute;
 
             .folder-cover{
+                cursor: pointer;
                 border-radius: 0 0 5px 5px;
                 position: relative;
                 width: 100%;
                 height: 100%;
                 background-color: $color-folder-secondary;
                 transition: transform 1s, box-shadow 0.5s;
+
+                .btn {
+                    @include button-theme(#1cb890, #179172, #15775e);
+                    margin-top:0;
+                    position: absolute;
+                    top: 2rem;
+                    left: 2rem;
+                }
+                
             }
 
             .folder-background {

@@ -1,6 +1,7 @@
+const folderCover = document.querySelector('.folder-cover');
+
 const startFolderAnimation = () => {
     const animationContainer = document.querySelector('.folder');
-    const folderCover = document.querySelector('.folder-cover');
     const sections = document.querySelectorAll('.project');
 
     // Dynamically establish how low the folder should be moved
@@ -22,10 +23,10 @@ const startFolderAnimation = () => {
   const calculateSectionsHeight = (sections)=> {
     let heightPx = 0;
     sections.forEach((section)=> {
-        heightPx += section.offsetHeight
+        heightPx += section.offsetHeight;
     })
 
-    return (heightPx + 'px')
+    return (heightPx + 'px');
   }
 
 
@@ -38,12 +39,6 @@ const fadeInSections = (sections) => {
 
 
   // liten for scroll position to trigger animation
-  window.addEventListener('scroll', (event)=>{
-    let animationStartPosition = document.querySelector('.projects-wrapper').scrollHeight + document.querySelector('.projects-wrapper').offsetHeight;
-    // console.log(`Window position is ${window.scrollY},, scroll position is ${animationStartPosition}`);
-
-    if(window.scrollY >= animationStartPosition){
-      startFolderAnimation();
-    }
-
+  folderCover.addEventListener('click', (event)=>{
+    startFolderAnimation();
   })
