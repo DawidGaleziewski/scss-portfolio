@@ -432,6 +432,15 @@
         transition: background-color 0.5s ease-out, color 0.5s ease-out; }
 
 /* PROJECTS END*/
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 2rem 5rem; }
+  .footer .media__item,
+  .footer .alternative-contact__item {
+    list-style: none;
+    margin: 0.5rem; }
+
 /* GENERAL STYLES START */
 *,
 *:after,
