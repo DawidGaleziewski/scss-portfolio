@@ -1,7 +1,7 @@
 @import '../elements/buttons';
 
 %section {
-	padding: 5rem;
+	padding: 5rem 0.5rem;
     text-align: center;
 
     .title{
@@ -15,14 +15,6 @@
     }
 }
 
-
-/* ABOUT START */
-.about {
-    @extend %section;
-	background-color: #d64e42;
-    color: #f2f3f8;
-}
-/* ABOUT END*/
 
 
 

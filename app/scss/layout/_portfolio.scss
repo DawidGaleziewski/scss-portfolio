@@ -27,9 +27,9 @@ $color-folder-secondary: #34709e;
             position: relative;
             width: 100%;
             background-color: $color-folder-primary;
-            color: #fff;
+            color: #f2f3f8;
             opacity: 0;
-            margin-bottom: 1px;
+            margin-bottom: 1px;        
 
             &__title{
                 font-size: 2rem;
@@ -37,7 +37,10 @@ $color-folder-secondary: #34709e;
             }
 
             &__description {
+                text-align: left;
                 font-size: 1.5rem;
+                line-height: 1.5;
+                color: #f2f3f8;
             }
             .stack-list {
                 margin-top: 1rem;

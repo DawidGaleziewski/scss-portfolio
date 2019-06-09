@@ -1,0 +1,27 @@
+.title { 
+    text-align: center;
+    .title--decor{
+        position: relative;
+        &:after {
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            width: 2rem;
+            right: -2.5rem;
+            height: 3px;
+            border-top: 1px solid #242938;
+        }
+
+        &:before {
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: -2.5rem;
+            height: 3px;
+            width: 2rem;
+            border-top: 1px solid #242938;
+        }
+    }
+}
