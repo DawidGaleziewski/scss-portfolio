@@ -19,17 +19,25 @@ $color-folder-secondary: #34709e;
 
     .projects-wrapper {
         position: relative;
-        width: 80vw;
+        width: 95vw;
         margin: 0 auto;
 
         .project {
-            padding: 1rem;
+            padding: 2rem 1rem;
             position: relative;
             width: 100%;
             background-color: $color-folder-primary;
             color: #f2f3f8;
             opacity: 0;
-            margin-bottom: 1px;        
+            margin-bottom: 1px;  
+            
+            &:nth-of-type(odd){
+                border-radius: 5px 5px 0 0;
+            }
+
+            &:nth-of-type(even){
+                border-radius: 0 0 5px 5px;
+            }
 
             &__title{
                 font-size: 2rem;
@@ -57,18 +65,23 @@ $color-folder-secondary: #34709e;
             }
 
             .media {
+                margin: 2rem auto;
+                text-align: center;
                 .btn-git {
-                    @include button-theme(#1cb890, #179172, #15775e);
+                    @include button-theme(#d64e42, #812e26, #a13b31);
+                    display: inline-block;
                 }
 
                 .btn-heroku {
-                    @include button-theme(#1cb890, #179172, #15775e);
+                    @include button-theme(#9a74ce, #4d3b68, #7b5ba8);
+                    display: inline-block;
                 }
             }
         }
 
         .folder {
-            width: 80vw;
+            margin-top: 5rem;
+            width: 95vw;
             height: 40vw;
             top: 0;
             position: absolute;

@@ -275,16 +275,20 @@
 
 .projects .projects-wrapper {
   position: relative;
-  width: 80vw;
+  width: 95vw;
   margin: 0 auto; }
   .projects .projects-wrapper .project {
-    padding: 1rem;
+    padding: 2rem 1rem;
     position: relative;
     width: 100%;
     background-color: #242938;
     color: #f2f3f8;
     opacity: 0;
     margin-bottom: 1px; }
+    .projects .projects-wrapper .project:nth-of-type(odd) {
+      border-radius: 5px 5px 0 0; }
+    .projects .projects-wrapper .project:nth-of-type(even) {
+      border-radius: 0 0 5px 5px; }
     .projects .projects-wrapper .project__title {
       font-size: 2rem;
       text-align: center; }
@@ -301,46 +305,52 @@
         .projects .projects-wrapper .project .stack-list__item--decor {
           text-decoration: underline;
           margin-bottom: 0.5rem; }
-    .projects .projects-wrapper .project .media .btn-git {
-      cursor: pointer;
-      text-align: center;
-      color: #fff;
-      background-color: #1cb890;
-      border-bottom: 3px solid #179172;
-      border-right: 3px solid #15775e;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 1rem 1.5rem;
-      border-radius: 3px;
-      display: block;
-      width: 10rem;
+    .projects .projects-wrapper .project .media {
       margin: 2rem auto;
-      transition: background-color 0.5s ease-out, color 0.5s ease-out; }
-      .projects .projects-wrapper .project .media .btn-git:active {
-        background-color: #15775e;
-        border-bottom: 3px solid #15775e;
-        transition: background-color 0.5s ease-out, color 0.5s ease-out; }
-    .projects .projects-wrapper .project .media .btn-heroku {
-      cursor: pointer;
-      text-align: center;
-      color: #fff;
-      background-color: #1cb890;
-      border-bottom: 3px solid #179172;
-      border-right: 3px solid #15775e;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 1rem 1.5rem;
-      border-radius: 3px;
-      display: block;
-      width: 10rem;
-      margin: 2rem auto;
-      transition: background-color 0.5s ease-out, color 0.5s ease-out; }
-      .projects .projects-wrapper .project .media .btn-heroku:active {
-        background-color: #15775e;
-        border-bottom: 3px solid #15775e;
-        transition: background-color 0.5s ease-out, color 0.5s ease-out; }
+      text-align: center; }
+      .projects .projects-wrapper .project .media .btn-git {
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        background-color: #d64e42;
+        border-bottom: 3px solid #812e26;
+        border-right: 3px solid #a13b31;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        border-radius: 3px;
+        display: block;
+        width: 10rem;
+        margin: 2rem auto;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out;
+        display: inline-block; }
+        .projects .projects-wrapper .project .media .btn-git:active {
+          background-color: #a13b31;
+          border-bottom: 3px solid #a13b31;
+          transition: background-color 0.5s ease-out, color 0.5s ease-out; }
+      .projects .projects-wrapper .project .media .btn-heroku {
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        background-color: #9a74ce;
+        border-bottom: 3px solid #4d3b68;
+        border-right: 3px solid #7b5ba8;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        border-radius: 3px;
+        display: block;
+        width: 10rem;
+        margin: 2rem auto;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out;
+        display: inline-block; }
+        .projects .projects-wrapper .project .media .btn-heroku:active {
+          background-color: #7b5ba8;
+          border-bottom: 3px solid #7b5ba8;
+          transition: background-color 0.5s ease-out, color 0.5s ease-out; }
   .projects .projects-wrapper .folder {
-    width: 80vw;
+    margin-top: 5rem;
+    width: 95vw;
     height: 40vw;
     top: 0;
     position: absolute; }
