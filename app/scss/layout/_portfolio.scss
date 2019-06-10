@@ -5,6 +5,8 @@ $color-folder-primary: #242938;
 $color-folder-secondary: #34709e;
 
 .projects{
+    padding-bottom: 40vw;
+    
     .title {
         margin-bottom:2.5rem;
         font-size: 3rem;
@@ -28,6 +30,8 @@ $color-folder-secondary: #34709e;
             width: 100%;
             background-color: $color-folder-primary;
             color: #f2f3f8;
+            // take those items out of document flow
+            display: none;
             opacity: 0;
             margin-bottom: 1px;  
             
