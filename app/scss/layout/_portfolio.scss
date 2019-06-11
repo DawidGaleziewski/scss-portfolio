@@ -98,14 +98,6 @@ $color-folder-secondary: #34709e;
                 height: 100%;
                 background-color: $color-folder-secondary;
                 transition: transform 1s, box-shadow 0.5s;
-
-                .btn {
-                    @include button-theme(#1cb890, #179172, #15775e);
-                    margin-top:0;
-                    position: absolute;
-                    top: 2rem;
-                    left: 2rem;
-                }
                 
             }
 

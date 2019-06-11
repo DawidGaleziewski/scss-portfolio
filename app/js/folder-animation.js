@@ -17,7 +17,8 @@ const startFolderAnimation = () => {
     animationContainer.style.transition = `transform ${1 * sections.length}s`;
 
     // dynamically establish how long should the folder open/close animation last
-    folderCover.style.animation = `open-folder ${1 * sections.length}s ease-out forwards 0s`;
+    const openingTime =  document.querySelector('.projects-wrapper').offsetHeight/1000 * 0.5;
+    folderCover.style.animation = `open-folder ${openingTime}s ease-out forwards 0s`;
 
   }
 
