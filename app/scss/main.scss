@@ -1,3 +1,6 @@
+@import './libraries/normalize.scss';
+// seems there are some issues with importing fontawesome
+@import './libraries/fontawesome/scss/fontawesome.scss';
 @import 'global/variables';
 @import './elements/section_headers';
 @import './layout/navbar';

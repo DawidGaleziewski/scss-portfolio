@@ -30,22 +30,47 @@ $color-folder-secondary: #34709e;
             width: 100%;
             background-color: $color-folder-primary;
             color: #f2f3f8;
-            // take those items out of document flow
             display: none;
             opacity: 0;
-            margin-bottom: 1px;  
-            
-            &:nth-of-type(odd){
-                border-radius: 5px 5px 0 0;
-            }
+            margin: 1rem auto;  
+            border-radius: 3px;
 
-            &:nth-of-type(even){
-                border-radius: 0 0 5px 5px;
-            }
 
             &__title{
-                font-size: 2rem;
+                position: relative;
+                font-size: 1.5rem;
                 text-align: center;
+                background-color: #f2f3f8;
+                width: 10rem;
+                height: 10rem;
+                display: block;
+                line-height: 9rem;
+                color: #242938;
+                border-radius: 200px;
+                padding: 0.5rem;
+                margin: 2rem auto;
+                border: 5px solid #34709e;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    right: -70px;
+                    width: 50px;
+                    height: 1px;
+                    background-color: #34709e;
+                    top: 51%;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: -70px;
+                    width: 50px;
+                    height: 1px;
+                    background-color: #34709e;
+                    top: 51%;
+                }
+                
             }
 
             &__description {
@@ -59,7 +84,6 @@ $color-folder-secondary: #34709e;
                 list-style: none;
 
                 &__item {
-                    margin-left: 1rem;
 
                     &--decor {
                         text-decoration: underline;
@@ -143,7 +167,7 @@ $color-folder-secondary: #34709e;
         transform:translate(0px,0px) skew(0deg) scale(1, 1);  
     }
 
-    90%{
+    50%{
         transform: translate(-10px, 15px) skew(10deg) scale(1, 0.9);
         transition: transform 1s, box-shadow 0.5s;
         -webkit-box-shadow: 2px -44px 28px -6px rgba(240,231,60,.7);
@@ -154,6 +178,6 @@ $color-folder-secondary: #34709e;
     }
     
     100% {
-      transform:translate(0px,0px) skew(0deg) scale(1, 1);  
+        transform:translate(0px,0px) skew(0deg) scale(1, 1); 
     }
   }
