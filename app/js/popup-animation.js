@@ -14,6 +14,7 @@ window.addEventListener('scroll', ()=> {
     sectionStackList.forEach((sectionStackItem)=> {
         if(elementIsInView(sectionStackItem,'.stack-list__item')){
             const itemList = sectionStackItem.querySelectorAll('.stack-list__item');
+            console.log(itemList)
             itemList.forEach((item, index)=> {  
                 item.style.animation = `popup 1s linear ${0.5 * index}s forwards`;
             })
