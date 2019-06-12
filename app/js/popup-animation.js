@@ -1,6 +1,6 @@
   // Check if element is in view
-  const elementIsInView = (domNode, cssSelector) =>{
-    const element= domNode.querySelector(cssSelector);
+  const elementIsInView = (domElement) =>{
+    const element= domElement;
     const elementHeight = element.clientHeight;
     const scrollY = window.scrollY || window.pageYOffset
     const windowHeight = window.innerHeight;
@@ -9,15 +9,15 @@
     return(scrollPosition >= elementPosition)
 }
 
-window.addEventListener('scroll', ()=> {
-    const sectionStackList = document.querySelectorAll('.stack-list');
-    sectionStackList.forEach((sectionStackItem)=> {
-        if(elementIsInView(sectionStackItem,'.stack-list__item')){
-            const itemList = sectionStackItem.querySelectorAll('.stack-list__item');
-            console.log(itemList)
-            itemList.forEach((item, index)=> {  
-                item.style.animation = `popup 1s linear ${0.5 * index}s forwards`;
-            })
+
+const animateItem = (domElement)=> {
+    const itemToAnimate = domElement;
+        if(elementIsInView(domElement)){
+            domElement.style.animation = `popup 1s linear 1s forwards`;
         }  
-    })
+}
+
+window.addEventListener('scroll', ()=> {
+    // const tag = document.querySelector('h1')
+    // animateItem(tag)
 })
