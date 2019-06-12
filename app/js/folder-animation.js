@@ -55,9 +55,8 @@ const fadeInSections = (sections) => {
       const windowHeight = window.innerHeight;
       const scrollPosition = scrollY + windowHeight;
       const folderPosition = folder.getBoundingClientRect().top + scrollY + folderHeight;
-
       return(scrollPosition >= folderPosition)
- 
+
   }
 
 

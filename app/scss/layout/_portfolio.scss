@@ -48,7 +48,7 @@ $color-folder-secondary: #34709e;
                 width: 10rem;
                 height: 10rem;
                 display: block;
-                line-height: 9rem;
+                line-height: 8.5rem;
                 color: #242938;
                 border-radius: 200px;
                 padding: 0.5rem;
@@ -84,14 +84,16 @@ $color-folder-secondary: #34709e;
                 color: #f2f3f8;
             }
             .stack-list {
-                margin-top: 1rem;
+                margin-top: 5rem;
                 list-style: none;
+                display: flex;
+                justify-content: space-around;
 
                 &__item {
                     font-size: 2rem;
-
                     .fa-html5 {
                         color: rgb(251,90,61);
+                        // animation: popup 1s linear 1s forwards;
                     }
 
                     .fa-css3-alt {
@@ -111,6 +113,11 @@ $color-folder-secondary: #34709e;
                 .btn-git {
                     @include button-theme(#d64e42, #812e26, #a13b31);
                     display: inline-block;
+
+
+                    .fa-github {
+ 
+                    }
                 }
 
                 .btn-heroku {
@@ -163,7 +170,7 @@ $color-folder-secondary: #34709e;
 }
 
 
-
+// Folder animation
 @keyframes show-section {
     from{
         opacity: 0;
@@ -194,3 +201,19 @@ $color-folder-secondary: #34709e;
         transform:translate(0px,0px) skew(0deg) scale(1, 1); 
     }
   }
+
+
+//   icons pop-up animations
+@keyframes popup {
+    0%{
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(2.2) rotate(20deg);
+    }
+
+    100%{
+        transform: scale(2) rotate(0deg);
+    }
+}
