@@ -1,6 +1,10 @@
 @import './section';
 @import '../elements/buttons';
 
+
+
+
+
 $color-folder-primary: #242938;
 $color-folder-secondary: #34709e;
 
@@ -84,11 +88,20 @@ $color-folder-secondary: #34709e;
                 list-style: none;
 
                 &__item {
+                    font-size: 2rem;
 
-                    &--decor {
-                        text-decoration: underline;
-                        margin-bottom: 0.5rem;
+                    .fa-html5 {
+                        color: rgb(251,90,61);
                     }
+
+                    .fa-css3-alt {
+                        color: rgb(0,114,181);
+                    }
+
+                    .fa-js{
+                        color: rgb(250,222,67);
+                    }
+                    
                 }
             }
 
