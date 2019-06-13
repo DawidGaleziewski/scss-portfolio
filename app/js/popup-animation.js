@@ -10,14 +10,16 @@
 }
 
 
-const animateItem = (domElement)=> {
+const animateItem = (domElement, delay)=> {
     const itemToAnimate = domElement;
-        if(elementIsInView(domElement)){
-            domElement.style.animation = `popup 1s linear 1s forwards`;
-        }  
+    if(elementIsInView(itemToAnimate)){
+        itemToAnimate.style.animation = `popup 1s linear ${delay}s forwards`;
+    }  
 }
 
 window.addEventListener('scroll', ()=> {
-    // const tag = document.querySelector('h1')
-    // animateItem(tag)
+    const stackLists = document.querySelectorAll('.stack-list__item');
+    stackLists.forEach((stackList, index)=> {
+        animateItem(stackList, (index * 0.5))
+    })
 })
