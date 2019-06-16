@@ -330,9 +330,8 @@ html {
   scroll-behavior: smooth; }
 
 /* NAVIGATION START */
-@media (max-width: 30rem), (max-height: 30rem) {
-  body {
-    overflow-x: hidden; } }
+body {
+  overflow-x: hidden; }
 
 .nav-top {
   z-index: 2;
