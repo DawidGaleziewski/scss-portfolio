@@ -5,12 +5,12 @@
     text-align: center;
 
     .title{
-        font-size: 3rem;
+        font-size: $size-title;
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        margin-bottom: $margin-medium;
 
         &--decor {
-            font-size: 2rem;
+            font-size: $size-title-decor;
         }
     }
 }

@@ -386,7 +386,7 @@ body {
       border-bottom: none; } }
   .menu__item {
     max-width: 15rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     opacity: 0;
     background-color: #242938;
     text-align: center;
@@ -430,7 +430,7 @@ body {
       color: inherit;
       font-weight: bold;
       display: block;
-      font-size: 1.5rem;
+      font-size: 2.25rem;
       min-width: 8rem;
       padding: 1rem; }
       @media (min-width: 30rem) {
@@ -499,7 +499,7 @@ body {
 /* NAVIGATION END */
 /* MAIN-HEADER START */
 .main-header {
-  padding-top: 10rem;
+  padding-top: 25vh;
   background-color: #242938;
   color: white;
   text-align: center; }
@@ -513,7 +513,7 @@ body {
     position: relative;
     background-color: #34709e;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     max-width: 95%;
     width: 30rem;
     height: 3rem;
@@ -565,7 +565,7 @@ body {
   .about .title, .contact .title {
     font-size: 3rem;
     text-transform: uppercase;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     .about .title--decor, .contact .title--decor {
       font-size: 2rem; }
 
@@ -577,7 +577,7 @@ body {
     text-align: left;
     font-size: 1.5rem;
     line-height: 1.5;
-    margin: 2rem;
+    margin: 1rem;
     color: #f2f3f8; }
 
 /* ABOUT END*/
@@ -587,17 +587,17 @@ body {
   .about .title, .contact .title {
     font-size: 3rem;
     text-transform: uppercase;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     .about .title--decor, .contact .title--decor {
       font-size: 2rem; }
 
 .projects {
   padding-bottom: 40vw; }
   .projects .title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     font-size: 3rem;
     text-transform: uppercase;
-    margin-top: 4rem;
     text-align: center; }
     .projects .title--decor {
       font-size: 2rem; }
@@ -627,7 +627,7 @@ body {
         color: #242938;
         border-radius: 200px;
         padding: 0.5rem;
-        margin: 2rem auto;
+        margin: 1rem auto;
         border: 5px solid #34709e; }
         .projects .projects-wrapper .project__title::after {
           position: absolute;
@@ -651,7 +651,7 @@ body {
         line-height: 1.5;
         color: #f2f3f8; }
       .projects .projects-wrapper .project .stack-list {
-        margin-top: 5rem;
+        margin-top: 1rem;
         list-style: none;
         display: flex;
         justify-content: space-around; }
@@ -779,7 +779,7 @@ body {
       border: none;
       width: 100%;
       padding: 1rem;
-      margin: 0.5rem;
+      margin: 1rem;
       border-right: 3px solid #242938;
       border-bottom: 3px solid #242938;
       font-size: 1.5rem; }
@@ -818,7 +818,7 @@ body {
   .footer .media__item,
   .footer .alternative-contact__item {
     list-style: none;
-    margin: 0.5rem; }
+    margin: 1rem; }
 
 /* GENERAL STYLES START */
 *,

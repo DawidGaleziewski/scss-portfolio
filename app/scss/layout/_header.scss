@@ -2,13 +2,13 @@
 
 /* MAIN-HEADER START */
 .main-header {
-	padding-top: 10rem;
+	padding-top: 25vh;
 	background-color: $color-primary;
 	color: white;
     text-align: center;
     
     &__title {
-        font-size: 3rem;
+        font-size: $size-title;
         font-weight: normal;
 
         &--decor {
@@ -21,11 +21,11 @@
         position: relative;
         background-color: $color-secondary;
         font-weight: normal;
-        font-size: 1rem;
+        font-size: $size-description;
         max-width: 95%;
         width: 30rem;
         height: 3rem;
-        margin: 2rem auto;
+        margin: $margin-medium auto;
         vertical-align: middle;
         line-height: 3rem;
 

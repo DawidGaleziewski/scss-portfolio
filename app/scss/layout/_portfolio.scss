@@ -13,14 +13,14 @@ $color-folder-secondary: $color-secondary;
     padding-bottom: 40vw;
     
     .title {
-        margin-bottom:2.5rem;
-        font-size: 3rem;
+        margin-bottom: $margin-medium;
+        margin-top: $margin-medium;
+        font-size: $size-title;
         text-transform: uppercase;
-        margin-top: 4rem;
         text-align: center;
 
         &--decor {
-            font-size: 2rem;
+            font-size: $size-title-decor;
         }
     }
 
@@ -37,13 +37,13 @@ $color-folder-secondary: $color-secondary;
             color: $color-light;
             display: none;
             opacity: 0;
-            margin: 1rem auto;  
+            margin: $margin-small auto;  
             border-radius: 3px;
 
 
             &__title{
                 position: relative;
-                font-size: 1.5rem;
+                font-size: $size-description;
                 text-align: center;
                 background-color: $color-light;
                 width: 10rem;
@@ -53,7 +53,7 @@ $color-folder-secondary: $color-secondary;
                 color: $color-primary;
                 border-radius: 200px;
                 padding: 0.5rem;
-                margin: 2rem auto;
+                margin: $margin-small auto;
                 border: 5px solid $color-secondary;
 
                 &::after {
@@ -80,18 +80,18 @@ $color-folder-secondary: $color-secondary;
 
             &__description {
                 text-align: left;
-                font-size: 1.5rem;
+                font-size: $size-description;
                 line-height: 1.5;
                 color: $color-light;
             }
             .stack-list {
-                margin-top: 5rem;
+                margin-top: $margin-small;
                 list-style: none;
                 display: flex;
                 justify-content: space-around;
 
                 &__item {
-                    font-size: 2rem;
+                    font-size: $size-title-decor;
                     .fa-html5 {
                         color: $color-html;
                         // animation: popup 1s linear 1s forwards;
@@ -114,11 +114,6 @@ $color-folder-secondary: $color-secondary;
                 .btn-git {
                     @include button-theme($color-complementary);
                     display: inline-block;
-
-
-                    .fa-github {
- 
-                    }
                 }
 
                 .btn-heroku {
