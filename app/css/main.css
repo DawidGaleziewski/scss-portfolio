@@ -360,14 +360,17 @@ html {
   right: 0;
   position: absolute;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 2rem;
+  flex-wrap: no-wrap;
+  padding: 1rem;
   height: 80vh;
   width: 80vw;
   justify-content: space-around;
   align-items: center;
   transition: transform 1s ease-in;
   background-color: #242938; }
+  @media (min-width: 30rem) {
+    .menu {
+      flex-wrap: wrap; } }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .menu {
       justify-content: space-between;
@@ -383,7 +386,7 @@ html {
       border-bottom: none; } }
   .menu__item {
     max-width: 15rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 0;
     background-color: #242938;
     text-align: center;
