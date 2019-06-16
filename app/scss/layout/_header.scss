@@ -7,6 +7,10 @@
 	background-color: $color-primary;
 	color: white;
     text-align: center;
+
+    @media(min-width: 30rem) and (min-height: 30rem){
+        margin: 0 auto;
+    }
     
     &__title {
         font-size: $size-title;

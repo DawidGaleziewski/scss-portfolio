@@ -489,6 +489,9 @@ body {
   background-color: #242938;
   color: white;
   text-align: center; }
+  @media (min-width: 30rem) and (min-height: 30rem) {
+    .main-header {
+      margin: 0 auto; } }
   .main-header__title {
     font-size: 3rem;
     font-weight: normal; }
@@ -549,6 +552,10 @@ body {
   padding: 3rem 0.5rem;
   text-align: center;
   padding: 3rem 0.5rem; }
+  @media (min-width: 30rem) and (min-height: 30rem) {
+    .about, .contact {
+      max-width: 60rem;
+      margin: 0 auto; } }
   .about .title, .contact .title {
     font-size: 3rem;
     text-transform: uppercase;
@@ -572,6 +579,10 @@ body {
   padding: 3rem 0.5rem;
   text-align: center;
   padding: 3rem 0.5rem; }
+  @media (min-width: 30rem) and (min-height: 30rem) {
+    .about, .contact {
+      max-width: 60rem;
+      margin: 0 auto; } }
   .about .title, .contact .title {
     font-size: 3rem;
     text-transform: uppercase;
@@ -581,6 +592,10 @@ body {
 
 .projects {
   padding-bottom: 40vw; }
+  @media (min-width: 30rem) and (min-height: 30rem) {
+    .projects {
+      max-width: 60rem;
+      margin: 0 auto; } }
   .projects .title {
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -593,6 +608,9 @@ body {
     position: relative;
     width: 95vw;
     margin: 0 auto; }
+    @media (min-width: 30rem) and (min-height: 30rem) {
+      .projects .projects-wrapper {
+        max-width: 60rem; } }
     .projects .projects-wrapper .project {
       padding: 2rem 1rem;
       position: relative;
@@ -700,6 +718,10 @@ body {
       height: 40vw;
       top: 0;
       position: absolute; }
+      @media (min-width: 30rem) and (min-height: 30rem) {
+        .projects .projects-wrapper .folder {
+          max-width: 60rem;
+          max-height: 30rem; } }
       .projects .projects-wrapper .folder .folder-cover {
         cursor: pointer;
         border-radius: 0 0 5px 5px;

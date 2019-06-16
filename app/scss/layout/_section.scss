@@ -5,6 +5,11 @@
     text-align: center;
     padding: $padding-large $padding-small;
 
+    @media(min-width: 30rem) and (min-height: 30rem){
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
     .title{
         font-size: $size-title;
         text-transform: uppercase;

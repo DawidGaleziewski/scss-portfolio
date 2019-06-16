@@ -11,6 +11,12 @@ $color-folder-secondary: $color-secondary;
 
 .projects{
     padding-bottom: 40vw;
+
+    @media(min-width: 30rem) and (min-height: 30rem){
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
     
     .title {
         margin-bottom: $margin-medium;
@@ -28,6 +34,10 @@ $color-folder-secondary: $color-secondary;
         position: relative;
         width: 95vw;
         margin: 0 auto;
+
+        @media(min-width: 30rem) and (min-height: 30rem){
+            max-width: 60rem;
+        }
 
         .project {
             padding: 2rem 1rem;
@@ -129,6 +139,11 @@ $color-folder-secondary: $color-secondary;
             height: 40vw;
             top: 0;
             position: absolute;
+
+            @media(min-width: 30rem) and (min-height: 30rem){
+                max-width: 60rem;
+                max-height: 30rem;
+            }
 
             .folder-cover{
                 cursor: pointer;
