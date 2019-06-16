@@ -25,7 +25,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem;
+	padding: $padding-medium;
 	&__logo{
 		color: #fff;
 	}
@@ -46,7 +46,7 @@ body {
 	position: absolute;
 	flex-direction: column;
 	flex-wrap: no-wrap;
-	padding: 1rem;
+	padding: $padding-medium;
 	height: 80vh;
 	width: 80vw;
 	justify-content: space-around;
@@ -136,10 +136,10 @@ body {
 			display: block;
 			font-size: $size-description * 1.5;
 			min-width: 8rem;
-			padding: 1rem;
+			padding: $padding-small;
 
 			@media(min-width: 30rem){
-				padding: 2rem
+				padding: $padding-medium;
 			}
 		}
 		
@@ -152,7 +152,7 @@ body {
 .menu-mobile__burger {
 	display: inline-block;
 	position: absolute;
-	right: 2rem;
+	right: $margin-medium;
 
 	&:hover {
 		cursor: pointer;

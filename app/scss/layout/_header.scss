@@ -2,6 +2,7 @@
 
 /* MAIN-HEADER START */
 .main-header {
+    padding: $padding-small;
 	padding-top: 25vh;
 	background-color: $color-primary;
 	color: white;
@@ -56,7 +57,7 @@
 
 
     &__image {
-        transform: translateY(4rem)
+        transform: translateY($padding-medium)
     }
 }
 

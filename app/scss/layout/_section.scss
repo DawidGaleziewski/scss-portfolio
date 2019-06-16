@@ -1,8 +1,9 @@
 @import '../elements/buttons';
 
 %section {
-	padding: 5rem 0.5rem;
+	padding: $padding-large $padding-small;
     text-align: center;
+    padding: $padding-large $padding-small;
 
     .title{
         font-size: $size-title;
