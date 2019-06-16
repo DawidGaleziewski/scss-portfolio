@@ -565,6 +565,7 @@ body {
 
 /* ABOUT START */
 .about {
+  z-index: 1;
   background-color: #d64e42;
   color: #f2f3f8; }
   .about__description {
