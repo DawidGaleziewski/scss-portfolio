@@ -369,6 +369,7 @@ body {
   background-color: #242938; }
   @media (min-width: 30rem) {
     .menu {
+      height: 100vh;
       flex-wrap: wrap; } }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .menu {
