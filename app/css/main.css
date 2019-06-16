@@ -347,7 +347,8 @@ body {
     color: #fff; }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .nav-top {
-      padding: 0 5vw; } }
+      flex-wrap: nowrap;
+      padding: 0.5rem; } }
 
 .menu {
   display: flex;
@@ -373,8 +374,9 @@ body {
       flex-wrap: wrap; } }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .menu {
-      justify-content: space-between;
-      width: 30rem;
+      padding: 0.5rem;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
       margin-left: 2rem;
       transform: translateX(0);
       top: 0;
@@ -385,6 +387,7 @@ body {
       border-left: none;
       border-bottom: none; } }
   .menu__item {
+    position: relative;
     max-width: 15rem;
     font-size: 1.5rem;
     opacity: 0;
@@ -397,34 +400,19 @@ body {
     @media (min-width: 30rem) and (min-height: 30rem) {
       .menu__item {
         opacity: 1; } }
-    .menu__item:hover {
-      transform: rotateZ(5deg);
-      transition: transform 0.3s ease-in;
-      color: #fff; }
-    .menu__item:after {
-      border-radius: 3px;
-      position: absolute;
-      content: '';
-      background-color: #1cb890;
-      border: none;
-      top: 0;
-      right: 0;
-      height: 0%;
-      width: 5px; }
     .menu__item:before {
       border-radius: 3px;
       position: absolute;
       content: '';
       background-color: #1cb890;
+      background: linear-gradient(to left, #1cb890, #083328);
       border: none;
       bottom: -4px;
-      right: 0;
+      left: 30%;
       height: 5px;
       width: 0%; }
-    .menu__item:hover::after, .menu__item:active::after {
-      animation: button-load 2s forwards; }
     .menu__item:hover::before, .menu__item:active::before {
-      animation: button-load-bottom 2s forwards 2s; }
+      animation: button-load-bottom 0.5s forwards 0s; }
     .menu__item .link {
       text-decoration: none;
       color: inherit;
@@ -436,6 +424,10 @@ body {
       @media (min-width: 30rem) {
         .menu__item .link {
           padding: 2rem; } }
+      @media (min-width: 30rem) and (min-height: 30rem) {
+        .menu__item .link {
+          padding: 0.5rem;
+          font-size: 1.05rem; } }
 
 .menu-mobile__burger {
   display: inline-block;
@@ -475,18 +467,11 @@ body {
   transform: translateX(0vw);
   transition: transform 1s ease-in; }
 
-/* Animations */
-@keyframes button-load {
-  0% {
-    height: 0%; }
-  100% {
-    height: 100%; } }
-
 @keyframes button-load-bottom {
   0% {
     width: 0%; }
   100% {
-    width: 100%; } }
+    width: 40%; } }
 
 @keyframes linkFading {
   from {
