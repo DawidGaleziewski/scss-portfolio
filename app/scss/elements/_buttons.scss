@@ -1,4 +1,7 @@
-@mixin button-theme($color-btn-main, $color-btn-border-bottom, $color-btn-border-right) {
+@mixin button-theme($color-btn-main) {
+
+	$color-btn-border-bottom: darken($color-btn-main, 10%);
+	$color-btn-border-right: darken($color-btn-main, 30%);
 	cursor: pointer;
 	text-align: center;
 	color: #fff;

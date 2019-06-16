@@ -499,7 +499,7 @@ body {
 /* NAVIGATION END */
 /* MAIN-HEADER START */
 .main-header {
-  padding-top: 5.375rem;
+  padding-top: 10rem;
   background-color: #242938;
   color: white;
   text-align: center; }
@@ -541,8 +541,8 @@ body {
     text-align: center;
     color: #fff;
     background-color: #1cb890;
-    border-bottom: 3px solid #179172;
-    border-right: 3px solid #15775e;
+    border-bottom: 3px solid #158c6d;
+    border-right: 3px solid #083328;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1rem 1.5rem;
@@ -552,8 +552,8 @@ body {
     margin: 2rem auto;
     transition: background-color 0.5s ease-out, color 0.5s ease-out; }
     .main-header .btn:active {
-      background-color: #15775e;
-      border-bottom: 3px solid #15775e;
+      background-color: #083328;
+      border-bottom: 3px solid #083328;
       transition: background-color 0.5s ease-out, color 0.5s ease-out; }
   .main-header__image {
     transform: translateY(4rem); }
@@ -671,8 +671,8 @@ body {
           text-align: center;
           color: #fff;
           background-color: #d64e42;
-          border-bottom: 3px solid #812e26;
-          border-right: 3px solid #a13b31;
+          border-bottom: 3px solid #bc3529;
+          border-right: 3px solid #681d17;
           text-transform: uppercase;
           font-weight: bold;
           padding: 1rem 1.5rem;
@@ -683,16 +683,16 @@ body {
           transition: background-color 0.5s ease-out, color 0.5s ease-out;
           display: inline-block; }
           .projects .projects-wrapper .project .media .btn-git:active {
-            background-color: #a13b31;
-            border-bottom: 3px solid #a13b31;
+            background-color: #681d17;
+            border-bottom: 3px solid #681d17;
             transition: background-color 0.5s ease-out, color 0.5s ease-out; }
         .projects .projects-wrapper .project .media .btn-heroku {
           cursor: pointer;
           text-align: center;
           color: #fff;
           background-color: #9a74ce;
-          border-bottom: 3px solid #4d3b68;
-          border-right: 3px solid #7b5ba8;
+          border-bottom: 3px solid #7f4ec1;
+          border-right: 3px solid #4e2c7d;
           text-transform: uppercase;
           font-weight: bold;
           padding: 1rem 1.5rem;
@@ -703,8 +703,8 @@ body {
           transition: background-color 0.5s ease-out, color 0.5s ease-out;
           display: inline-block; }
           .projects .projects-wrapper .project .media .btn-heroku:active {
-            background-color: #7b5ba8;
-            border-bottom: 3px solid #7b5ba8;
+            background-color: #4e2c7d;
+            border-bottom: 3px solid #4e2c7d;
             transition: background-color 0.5s ease-out, color 0.5s ease-out; }
     .projects .projects-wrapper .folder {
       margin-top: 5rem;
@@ -770,7 +770,7 @@ body {
 .contact {
   padding: 5rem 0;
   background-color: #34709e;
-  color: #fff;
+  color: #f2f3f8;
   margin-top: 40vh; }
   .contact-form {
     margin: 0 2rem;
@@ -787,7 +787,7 @@ body {
         color: #242938;
         font-weight: bold; }
       .contact-form__input:focus {
-        color: #fff;
+        color: #f2f3f8;
         background-color: #242938; }
     .contact-form .btn {
       border: none;
@@ -795,8 +795,8 @@ body {
       text-align: center;
       color: #fff;
       background-color: #1cb890;
-      border-bottom: 3px solid #179172;
-      border-right: 3px solid #15775e;
+      border-bottom: 3px solid #158c6d;
+      border-right: 3px solid #083328;
       text-transform: uppercase;
       font-weight: bold;
       padding: 1rem 1.5rem;
@@ -806,8 +806,8 @@ body {
       margin: 2rem auto;
       transition: background-color 0.5s ease-out, color 0.5s ease-out; }
       .contact-form .btn:active {
-        background-color: #15775e;
-        border-bottom: 3px solid #15775e;
+        background-color: #083328;
+        border-bottom: 3px solid #083328;
         transition: background-color 0.5s ease-out, color 0.5s ease-out; }
 
 /* PROJECTS END*/

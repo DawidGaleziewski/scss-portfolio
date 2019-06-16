@@ -1,11 +1,12 @@
 @import '../elements/buttons';
+@import '../global/variables';
 
 /* PROJECTS START*/
 .contact {
     @extend %section;
     padding: 5rem 0;
-    background-color: #34709e;
-    color: #fff;
+    background-color: $color-secondary;
+    color: $color-light;
     margin-top: 40vh;
 
     &-form{
@@ -17,24 +18,24 @@
             width: 100%;
             padding: 1rem;
             margin: 0.5rem;
-            border-right: 3px solid #242938;
-            border-bottom: 3px solid #242938;
+            border-right: 3px solid $color-primary;
+            border-bottom: 3px solid $color-primary;
             font-size: 1.5rem;
 
             &::placeholder{
-                color: #242938;
+                color: $color-primary;
                 font-weight: bold;
             }
 
             &:focus {
-                color: #fff;
-                background-color: #242938;
+                color: $color-light;
+                background-color: $color-primary
             }
         }
 
         .btn {
             border: none;
-            @include button-theme(#1cb890, #179172, #15775e);
+            @include button-theme($color-clickable-primary);
         }
     }
 }

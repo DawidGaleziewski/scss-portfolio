@@ -2,8 +2,8 @@
 
 /* MAIN-HEADER START */
 .main-header {
-	padding-top: 5.375rem;
-	background-color: #242938;
+	padding-top: 10rem;
+	background-color: $color-primary;
 	color: white;
     text-align: center;
     
@@ -19,7 +19,7 @@
 
     &__ribbon {
         position: relative;
-        background-color: #34709e;
+        background-color: $color-secondary;
         font-weight: normal;
         font-size: 1rem;
         max-width: 95%;
@@ -36,7 +36,7 @@
             content: '';
             border-style: solid;
             border-width: 1.5rem 1.5rem 1.5rem 0;
-            border-color: transparent #242938 transparent transparent;
+            border-color: transparent $color-primary transparent transparent;
         }
 
         &::before{
@@ -46,12 +46,12 @@
             content: '';
             border-style: solid;
             border-width: 1.5rem 0 1.5rem 1.5rem;
-            border-color: transparent transparent transparent #242938 ;
+            border-color: transparent transparent transparent $color-primary ;
         }
     }
 
     .btn {
-        @include button-theme(#1cb890, #179172, #15775e);
+        @include button-theme($color-clickable-primary);
     }
 
 

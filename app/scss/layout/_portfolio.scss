@@ -1,12 +1,13 @@
 @import './section';
 @import '../elements/buttons';
+@import '../global/variables';
 
 
 
 
 
-$color-folder-primary: #242938;
-$color-folder-secondary: #34709e;
+$color-folder-primary: $color-primary;
+$color-folder-secondary: $color-secondary;
 
 .projects{
     padding-bottom: 40vw;
@@ -33,7 +34,7 @@ $color-folder-secondary: #34709e;
             position: relative;
             width: 100%;
             background-color: $color-folder-primary;
-            color: #f2f3f8;
+            color: $color-light;
             display: none;
             opacity: 0;
             margin: 1rem auto;  
@@ -44,16 +45,16 @@ $color-folder-secondary: #34709e;
                 position: relative;
                 font-size: 1.5rem;
                 text-align: center;
-                background-color: #f2f3f8;
+                background-color: $color-light;
                 width: 10rem;
                 height: 10rem;
                 display: block;
                 line-height: 8.5rem;
-                color: #242938;
+                color: $color-primary;
                 border-radius: 200px;
                 padding: 0.5rem;
                 margin: 2rem auto;
-                border: 5px solid #34709e;
+                border: 5px solid $color-secondary;
 
                 &::after {
                     position: absolute;
@@ -61,7 +62,7 @@ $color-folder-secondary: #34709e;
                     right: -70px;
                     width: 50px;
                     height: 1px;
-                    background-color: #34709e;
+                    background-color: $color-secondary;
                     top: 51%;
                 }
 
@@ -71,7 +72,7 @@ $color-folder-secondary: #34709e;
                     left: -70px;
                     width: 50px;
                     height: 1px;
-                    background-color: #34709e;
+                    background-color: $color-secondary;
                     top: 51%;
                 }
                 
@@ -81,7 +82,7 @@ $color-folder-secondary: #34709e;
                 text-align: left;
                 font-size: 1.5rem;
                 line-height: 1.5;
-                color: #f2f3f8;
+                color: $color-light;
             }
             .stack-list {
                 margin-top: 5rem;
@@ -92,16 +93,16 @@ $color-folder-secondary: #34709e;
                 &__item {
                     font-size: 2rem;
                     .fa-html5 {
-                        color: rgb(251,90,61);
+                        color: $color-html;
                         // animation: popup 1s linear 1s forwards;
                     }
 
                     .fa-css3-alt {
-                        color: rgb(0,114,181);
+                        color: $color-css;
                     }
 
                     .fa-js{
-                        color: rgb(250,222,67);
+                        color: $color-js;
                     }
                     
                 }
@@ -111,7 +112,7 @@ $color-folder-secondary: #34709e;
                 margin: 2rem auto;
                 text-align: center;
                 .btn-git {
-                    @include button-theme(#d64e42, #812e26, #a13b31);
+                    @include button-theme($color-complementary);
                     display: inline-block;
 
 
@@ -121,7 +122,7 @@ $color-folder-secondary: #34709e;
                 }
 
                 .btn-heroku {
-                    @include button-theme(#9a74ce, #4d3b68, #7b5ba8);
+                    @include button-theme($color-clickable-secondary);
                     display: inline-block;
                 }
             }

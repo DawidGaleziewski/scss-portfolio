@@ -1,7 +1,9 @@
+@import '../global/variables';
+
 // Variables
 	// colors
-	$color-main: #242938;
-	$color-accent: #1cb890;
+	$color-main: $color-primary;
+	$color-accent: $color-clickable-primary;
 
 
 // RELATED TO SCROLL
@@ -18,7 +20,7 @@ body {
 	z-index: 2;
 	position: fixed;
 	top: 0;
-	width:100vw;
+	width: 100vw;
 	background-color: $color-main;
 	display: flex;
 	justify-content: space-between;
