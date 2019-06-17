@@ -10,6 +10,10 @@
         margin: 0 auto;
     }
 
+    // @media(min-width: 30rem) and (min-height: 30rem){
+    //     transform: translateY(-25vh);
+    // }
+
     .title{
         font-size: $size-title;
         text-transform: uppercase;

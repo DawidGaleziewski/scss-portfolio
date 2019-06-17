@@ -492,7 +492,17 @@ body {
   @media (min-width: 30rem) and (min-height: 30rem) {
     .main-header {
       margin: 0 auto;
-      padding-bottom: 25vh; } }
+      position: relative;
+      padding-bottom: 0; }
+      .main-header__background-extend {
+        width: 100%;
+        height: 25vh;
+        background-color: #242938;
+        z-index: -2;
+        position: absolute;
+        bottom: -25vh;
+        left: 0;
+        right: 0; } }
   .main-header__title {
     font-size: 3rem;
     font-weight: normal; }
@@ -549,7 +559,7 @@ body {
     transform: translateY(2rem); }
     @media (min-width: 30rem) and (min-height: 30rem) {
       .main-header__image {
-        transform: translateY(0); } }
+        transform: translateY(3rem); } }
 
 /* MAIN-HEADER END */
 .about, .contact {
@@ -574,7 +584,7 @@ body {
   color: #f2f3f8; }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .about {
-      transform: translateY(-25vh); } }
+      margin: 0 auto; } }
   .about__description {
     text-align: left;
     font-size: 1.5rem;
@@ -599,6 +609,7 @@ body {
       font-size: 2rem; }
 
 .projects {
+  background-color: #fff;
   padding-bottom: 40vw; }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .projects {
