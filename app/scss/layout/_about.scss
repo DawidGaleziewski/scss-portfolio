@@ -7,6 +7,10 @@
 	background-color: $color-complementary;
     color: $color-light;
 
+    @media(min-width: 30rem) and (min-height: 30rem){
+        transform: translateY(-25vh);
+    }
+
     &__description{
         text-align: left;
         font-size: $size-description;

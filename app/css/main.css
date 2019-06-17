@@ -491,7 +491,8 @@ body {
   text-align: center; }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .main-header {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-bottom: 25vh; } }
   .main-header__title {
     font-size: 3rem;
     font-weight: normal; }
@@ -546,6 +547,9 @@ body {
       transition: background-color 0.5s ease-out, color 0.5s ease-out; }
   .main-header__image {
     transform: translateY(2rem); }
+    @media (min-width: 30rem) and (min-height: 30rem) {
+      .main-header__image {
+        transform: translateY(0); } }
 
 /* MAIN-HEADER END */
 .about, .contact {
@@ -568,6 +572,9 @@ body {
   z-index: 1;
   background-color: #d64e42;
   color: #f2f3f8; }
+  @media (min-width: 30rem) and (min-height: 30rem) {
+    .about {
+      transform: translateY(-25vh); } }
   .about__description {
     text-align: left;
     font-size: 1.5rem;

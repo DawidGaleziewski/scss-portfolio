@@ -10,6 +10,7 @@
 
     @media(min-width: 30rem) and (min-height: 30rem){
         margin: 0 auto;
+        padding-bottom: 25vh;
     }
     
     &__title {
@@ -61,7 +62,12 @@
 
 
     &__image {
-        transform: translateY($padding-medium)
+        transform: translateY($padding-medium);
+
+        @media(min-width: 30rem) and (min-height: 30rem){
+            transform: translateY(0);
+        }
+
     }
 }
 
