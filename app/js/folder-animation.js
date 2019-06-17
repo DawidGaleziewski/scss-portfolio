@@ -11,7 +11,7 @@ const startFolderAnimation = () => {
     fadeInSections(sections);
 
     // Dynamically establish how low the folder should be moved
-    animationContainer.style.transform = `translateY(${calculateSectionsHeight(sections)})`;
+    // animationContainer.style.transform = `translateY(${calculateSectionsHeight(sections)})`;
 
     // dynamically establish how long should the folder move
     animationContainer.style.transition = `transform ${1 * sections.length}s`;
@@ -45,7 +45,6 @@ const fadeInSections = (sections) => {
         
     })
 }
-
 
   // Check if folder is in view
   const isInView = () =>{

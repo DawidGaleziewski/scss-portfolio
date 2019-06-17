@@ -609,12 +609,7 @@ body {
       font-size: 2rem; }
 
 .projects {
-  background-color: #fff;
-  padding-bottom: 40vw; }
-  @media (min-width: 30rem) and (min-height: 30rem) {
-    .projects {
-      max-width: 60rem;
-      margin: 0 auto; } }
+  background-color: #fff; }
   .projects .title {
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -799,8 +794,7 @@ body {
 .contact {
   padding: 5rem 0;
   background-color: #34709e;
-  color: #f2f3f8;
-  margin-top: 40vh; }
+  color: #f2f3f8; }
   .contact-form {
     margin: 0 2rem;
     width: 80vw; }

@@ -11,14 +11,7 @@ $color-folder-secondary: $color-secondary;
 
 .projects{
     background-color: #fff;
-    padding-bottom: 40vw;
 
-    @media(min-width: 30rem) and (min-height: 30rem){
-        max-width: 60rem;
-        margin: 0 auto;
-    }
-
-    
     .title {
         margin-bottom: $margin-medium;
         margin-top: $margin-medium;
@@ -135,6 +128,7 @@ $color-folder-secondary: $color-secondary;
         }
 
         .folder {
+            // display: none;
             margin-top: 5rem;
             width: 95vw;
             height: 40vw;
