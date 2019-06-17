@@ -727,11 +727,10 @@ body {
             border-bottom: 3px solid #4e2c7d;
             transition: background-color 0.5s ease-out, color 0.5s ease-out; }
     .projects .projects-wrapper .folder {
-      margin-top: 5rem;
+      margin-top: 1rem;
       width: 95vw;
       height: 40vw;
-      top: 0;
-      position: absolute; }
+      position: relative; }
       @media (min-width: 30rem) and (min-height: 30rem) {
         .projects .projects-wrapper .folder {
           max-width: 60rem;

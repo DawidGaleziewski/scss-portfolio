@@ -129,11 +129,10 @@ $color-folder-secondary: $color-secondary;
 
         .folder {
             // display: none;
-            margin-top: 5rem;
+            margin-top: $margin-small;
             width: 95vw;
             height: 40vw;
-            top: 0;
-            position: absolute;
+            position: relative;
 
             @media(min-width: 30rem) and (min-height: 30rem){
                 max-width: 60rem;

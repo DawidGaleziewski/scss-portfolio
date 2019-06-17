@@ -1,17 +1,44 @@
 const folderCover = document.querySelector('.folder-cover');
 
+//   dynamically calculate the height of elements and return this value as string with px
+const calculateSectionsHeight = (sections)=> {
+  let heightPx = document.querySelector('.projects-wrapper').offsetHeight;
+  return (Number(heightPx));
+}
+
+// Extand the wrapper height
+const extandWrapperHeight = (sections) => {
+  sections.forEach((section)=> {
+    section.style.display ="block";
+  })
+}
+
+    // extand section for the animation
+   
+
+const moveFolderIntoPosition = () => {
+
+  const animationContainer = document.querySelector('.folder');
+  let sections = document.querySelectorAll('.project');
+  extandWrapperHeight(sections);
+  animationContainer.style.transform = `translateY(-${calculateSectionsHeight(sections) - animationContainer.offsetHeight }px)`
+  console.log(`${calculateSectionsHeight(sections) - animationContainer.offsetHeight }px`)
+}
+
+moveFolderIntoPosition()
+
 const startFolderAnimation = () => {
     const animationContainer = document.querySelector('.folder');
     let sections = document.querySelectorAll('.project');
 
-    // extand section for the animation
-    extandWrapperHeight(sections);
+
 
     // fade in the elements
     fadeInSections(sections);
 
     // Dynamically establish how low the folder should be moved
-    // animationContainer.style.transform = `translateY(${calculateSectionsHeight(sections)})`;
+    animationContainer.style.transform = `translateY(0)`;
+    
 
     // dynamically establish how long should the folder move
     animationContainer.style.transition = `transform ${1 * sections.length}s`;
@@ -22,18 +49,8 @@ const startFolderAnimation = () => {
 
   }
 
-// Extand the wrapper height
-const extandWrapperHeight = (sections) => {
-  sections.forEach((section)=> {
-    section.style.display ="block";
-  })
-}
 
-//   dynamically calculate the height of elements and return this value as string with px
-  const calculateSectionsHeight = (sections)=> {
-    let heightPx = document.querySelector('.projects-wrapper').offsetHeight;
-    return (heightPx + 'px');
-  }
+
 
 
 // dynamically assign opcaity delay depanding of number of those
