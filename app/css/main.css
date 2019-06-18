@@ -795,13 +795,16 @@ body {
   background-color: #34709e;
   color: #f2f3f8; }
   .contact-form {
-    margin: 0 2rem;
-    width: 80vw; }
+    margin: 0 2rem; }
+    @media (min-width: 30rem) and (min-height: 30rem) {
+      .contact-form {
+        max-width: 60rem; } }
     .contact-form__input {
+      display: block;
+      margin: 1rem auto;
       border: none;
       width: 100%;
       padding: 1rem;
-      margin: 1rem;
       border-right: 3px solid #242938;
       border-bottom: 3px solid #242938;
       font-size: 1.5rem; }

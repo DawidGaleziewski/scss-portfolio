@@ -10,16 +10,27 @@
 
     &-form{
         margin: 0 $margin-medium;
-        width: 80vw;
+
+
+        @media(min-width: 30rem) and (min-height: 30rem){
+            max-width: 60rem;
+        }
 
         &__input {
+            display: block;
+            margin: $margin-small auto;
             border: none;
             width: 100%;
             padding: 1rem;
-            margin: $margin-small;
             border-right: 3px solid $color-primary;
             border-bottom: 3px solid $color-primary;
             font-size: 1.5rem;
+
+            // @media(min-width: 30rem) and (min-height: 30rem){
+            //     width: 100%
+            // }
+
+
 
             &::placeholder{
                 color: $color-primary;
