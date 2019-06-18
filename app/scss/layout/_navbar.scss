@@ -28,6 +28,11 @@ body {
 	padding: $padding-medium;
 	&__logo{
 		color: #fff;
+		font-size: $size-title-decor;
+		@media(min-width: 30rem) and (min-height: 30rem){
+			margin-left: $margin-small;
+		}
+		
 	}
 
 	@media(min-width: 30rem) and (min-height: 30rem){

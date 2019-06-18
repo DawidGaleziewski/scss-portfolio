@@ -4,7 +4,7 @@
 	padding: $padding-large $padding-small;
     text-align: center;
     padding: $padding-large $padding-small;
-
+    margin-top: $margin-small;
     @media(min-width: 30rem) and (min-height: 30rem){
         max-width: 60rem;
         margin: $margin-large auto;

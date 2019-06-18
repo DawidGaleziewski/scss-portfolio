@@ -26,7 +26,7 @@ $color-folder-secondary: $color-secondary;
 
     .projects-wrapper {
         position: relative;
-        width: 95vw;
+    
         margin: 0 auto;
 
         @media(min-width: 30rem) and (min-height: 30rem){
@@ -43,7 +43,6 @@ $color-folder-secondary: $color-secondary;
             opacity: 0;
             margin: $margin-small auto;  
             border-radius: 3px;
-
 
             &__title{
                 position: relative;
@@ -129,7 +128,7 @@ $color-folder-secondary: $color-secondary;
 
         .folder {
             // display: none;
-            margin-top: $margin-small;
+            margin: $padding-large auto;
             width: 95vw;
             height: 40vw;
             position: relative;
