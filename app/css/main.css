@@ -508,6 +508,7 @@ body {
         left: 0;
         right: 0; } }
   .main-header__title {
+    padding: 3rem;
     font-size: 3rem;
     font-weight: normal; }
     .main-header__title--decor {
@@ -569,13 +570,13 @@ body {
 .about, .contact {
   padding: 3rem 0.5rem;
   text-align: center;
-  padding: 3rem 0.5rem;
-  margin-top: 1rem; }
+  padding: 3rem 0.5rem; }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .about, .contact {
-      max-width: 60rem;
+      max-width: 80rem;
       margin: 3rem auto; } }
   .about .title, .contact .title {
+    padding: 3rem;
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 2rem; }
@@ -601,13 +602,13 @@ body {
 .about, .contact {
   padding: 3rem 0.5rem;
   text-align: center;
-  padding: 3rem 0.5rem;
-  margin-top: 1rem; }
+  padding: 3rem 0.5rem; }
   @media (min-width: 30rem) and (min-height: 30rem) {
     .about, .contact {
-      max-width: 60rem;
+      max-width: 80rem;
       margin: 3rem auto; } }
   .about .title, .contact .title {
+    padding: 3rem;
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 2rem; }
@@ -616,9 +617,13 @@ body {
 
 .projects {
   background-color: #fff; }
+  @media (min-width: 30rem) and (min-height: 30rem) {
+    .projects {
+      max-width: 80rem;
+      margin: 0 auto;
+      padding-bottom: 5rem; } }
   .projects .title {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    padding: 3rem;
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center; }
@@ -748,6 +753,10 @@ body {
         height: 100%;
         background-color: #34709e;
         transition: transform 1s, box-shadow 0.5s; }
+        @media (min-width: 30rem) and (min-height: 30rem) {
+          .projects .projects-wrapper .folder .folder-cover {
+            max-width: 60rem;
+            max-height: 30rem; } }
       .projects .projects-wrapper .folder .folder-background {
         z-index: -1;
         border-radius: 0 0 5px 5px;
@@ -803,7 +812,7 @@ body {
     margin: 0 2rem; }
     @media (min-width: 30rem) and (min-height: 30rem) {
       .contact-form {
-        max-width: 60rem; } }
+        max-width: 80rem; } }
     .contact-form__input {
       display: block;
       margin: 1rem auto;

@@ -13,7 +13,7 @@
 
 
         @media(min-width: 30rem) and (min-height: 30rem){
-            max-width: 60rem;
+            max-width: $section-width-desktop;
         }
 
         &__input {

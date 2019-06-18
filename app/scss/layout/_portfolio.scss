@@ -12,9 +12,14 @@ $color-folder-secondary: $color-secondary;
 .projects{
     background-color: #fff;
 
+    @media(min-width: 30rem) and (min-height: 30rem){
+        max-width: $section-width-desktop;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+
     .title {
-        margin-bottom: $margin-medium;
-        margin-top: $margin-medium;
+        padding: $padding-large;
         font-size: $size-title;
         text-transform: uppercase;
         text-align: center;
@@ -147,6 +152,10 @@ $color-folder-secondary: $color-secondary;
                 background-color: $color-folder-secondary;
                 transition: transform 1s, box-shadow 0.5s;
                 
+                @media(min-width: 30rem) and (min-height: 30rem){
+                    max-width: 60rem;
+                    max-height: 30rem;
+                }
             }
 
             .folder-background {

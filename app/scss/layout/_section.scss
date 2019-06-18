@@ -4,9 +4,8 @@
 	padding: $padding-large $padding-small;
     text-align: center;
     padding: $padding-large $padding-small;
-    margin-top: $margin-small;
     @media(min-width: 30rem) and (min-height: 30rem){
-        max-width: 60rem;
+        max-width: $section-width-desktop;
         margin: $margin-large auto;
     }
 
@@ -15,6 +14,7 @@
     // }
 
     .title{
+        padding: $padding-large;
         font-size: $size-title;
         text-transform: uppercase;
         margin-bottom: $margin-medium;
