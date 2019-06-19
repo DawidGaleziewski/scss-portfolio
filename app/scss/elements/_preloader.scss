@@ -1,0 +1,33 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+
+    img {
+        animation: preload-animation 3s infinite 1s
+    }
+    
+}
+
+@keyframes preload-animation {
+    from{
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+// js classes
+.stop-preloader {
+    opacity: 0;
+    pointer-events: none;
+}

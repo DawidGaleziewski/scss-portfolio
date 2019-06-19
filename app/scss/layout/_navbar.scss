@@ -25,10 +25,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: $padding-medium;
+	padding: $padding-small $padding-medium;
 	&__logo{
+		text-align: bottom;
 		color: #fff;
-		font-size: $size-title-decor;
+		font-size: 2.2rem;
 		@media(min-width: 30rem) and (min-height: 30rem){
 			margin-left: $margin-small;
 		}
@@ -47,7 +48,7 @@ body {
 	border-bottom: 5px solid $color-accent;
 	overflow: hidden;
 	transform: translateX(90vw);
-	top: 11vh;
+	top: 3rem;
 	right: 0;
 	position: absolute;
 	flex-direction: column;
@@ -143,9 +144,9 @@ body {
 }
 
 .menu-mobile__burger {
-	display: inline-block;
-	position: absolute;
-	right: $margin-medium;
+	display: block;
+	// position: absolute;
+	// right: $margin-medium;
 
 	&:hover {
 		cursor: pointer;
@@ -157,8 +158,11 @@ body {
 		width: 2rem;
 		transition: transform 1s;
 		background-color: $color-accent;
-		margin-bottom: 5px;
+		margin-top: 5px;
 		border-radius: 3px;
+		// &:last-of-type{
+		// 	margin-bottom: 0;
+		// }
 
 		&:first-of-type:after {
 			position: absolute;
