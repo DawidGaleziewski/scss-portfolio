@@ -1,3 +1,4 @@
+// Mixing for creating buttons
 @mixin button-theme($color-btn-main) {
 
 	$color-btn-border-bottom: darken($color-btn-main, 10%);

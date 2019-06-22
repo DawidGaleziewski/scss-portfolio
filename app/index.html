@@ -14,6 +14,7 @@
 	<!-- FONTAWESOME CDN-->
 	<script src="https://kit.fontawesome.com/84ab97e888.js"></script>
 	
+	<!-- CHANGE BROWSER COLOR -->
 	<!-- Browser color - Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#242938">
 	<!-- Browser color - Windows Phone -->
@@ -22,39 +23,62 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#242938">
 </head>
 <body>
-<div class="preloader">
-	<div class="preloader__scene">
-		<div class="cube">
-			<div class="cube__face cube__face--front">
-				<span>Loading</span></div>
-			<div class="cube__face cube__face--back">
-				<span>Loading</span>
-			</div>
-			<div class="cube__face cube__face--right"></div>
-			<div class="cube__face cube__face--left"></div>
-			<div class="cube__face cube__face--top"></div>
-			<div class="cube__face cube__face--bottom"></div>
-		</div>
-	
-	
-		<div class="cube">
-			<div class="cube__face cube__face--front">
-				<span>Page</span>
-			</div>
-			<div class="cube__face cube__face--back">
-				<span>Page</span>
+
+
+
+
+
+<!-- TABLE OF CONTENTS -->
+	<!-- 1. PRELOADER -->
+	<!-- 2. NAVIGATION -->
+	<!-- 3. HEADER -->
+	<!-- 4. ABOUT SECTION -->
+	<!-- 5. PROJECTS SECTION -->
+	<!-- 6. CONTACT SECTION -->
+	<!-- 7. FOOTER -->
+	<!-- 8. JAVASCRIP IMPORTS -->
+
+
+
+
+
+	<!-- 1. PRELOADER START-->
+	<div class="preloader">
+		<div class="preloader__scene">
+			<div class="cube">
+				<div class="cube__face cube__face--front">
+					<span>Loading</span></div>
+				<div class="cube__face cube__face--back">
+					<span>Loading</span>
 				</div>
-			<div class="cube__face cube__face--right"></div>
-			<div class="cube__face cube__face--left"></div>
-			<div class="cube__face cube__face--top"></div>
-			<div class="cube__face cube__face--bottom"></div>
+				<div class="cube__face cube__face--right"></div>
+				<div class="cube__face cube__face--left"></div>
+				<div class="cube__face cube__face--top"></div>
+				<div class="cube__face cube__face--bottom"></div>
+			</div>
+		
+		
+			<div class="cube">
+				<div class="cube__face cube__face--front">
+					<span>Page</span>
+				</div>
+				<div class="cube__face cube__face--back">
+					<span>Page</span>
+					</div>
+				<div class="cube__face cube__face--right"></div>
+				<div class="cube__face cube__face--left"></div>
+				<div class="cube__face cube__face--top"></div>
+				<div class="cube__face cube__face--bottom"></div>
+			</div>
+		
 		</div>
-	
-	</div>
-</div>	
+	</div>	
+	<!-- 1. PRELOADER END-->
 
 
 
+
+	<!-- 2. NAVIGATION START-->
 	<nav class="nav-top">
 		<span class = "nav-top__logo">
 			<a href="#start-header" class="link">
@@ -74,33 +98,30 @@
 			<div class="burger__line"></div>
 		</div>
 	</nav>
+	<!-- 2. NAVIGATION END-->
 
 
 
 
-
-
+	<!-- 3. HEADER START-->
 	<header id="start-header" class="main-header">
-			<h1 class = "main-header__title">
-				Dawid Gałęziewski <br>
-				<span class="main-header__title--decor">
-					Portfolio
-				</span>		
-			</h1>
-
-			<h2 class = "main-header__ribbon">Front end developer</h2>
-			<span class="btn btn-animate">Hire me</span>
-
-			<img class="main-header__image" src="./img/macbook.png">
-
-			<div class="main-header__background-extend"></div>
+		<h1 class = "main-header__title">
+			Dawid Gałęziewski <br>
+			<span class="main-header__title--decor">
+				Portfolio
+			</span>		
+		</h1>
+		<h2 class = "main-header__ribbon">Front end developer</h2>
+		<span class="btn btn-animate">Hire me</span>
+		<img class="main-header__image" src="./img/macbook.png">
+		<div class="main-header__background-extend"></div>
 	</header>
+	<!-- 3. HEADER END-->
 
 
 
 
-
-
+	<!-- 4. ABOUT SECTION START-->
 	<section id="about" class= "about">
 		
 		<h2 class = "title"> 
@@ -115,10 +136,12 @@
 			Currently I am looking into doing more of what makes me happy: to code.
 		</p>
 	</section>
+	<!-- 4. ABOUT SECTION END-->
 
 
 
 
+	<!-- 5. PROJECTS SECTION START-->
 	<section id="projects" class="projects">
 		<h2 class="title">
 			<span class="title--decor">Check out</span> 
@@ -190,17 +213,18 @@
 			</div>
 		</div>
 	</section>
+	<!-- 5. PROJECTS SECTION END-->
 
 
 
 
+	<!-- 6. CONTACT SECTION START-->
 	<section id="contact" class="contact">
 		<h2 class="title">
 			<span class="title--decor">Send me a</span> 
 			<br>
 			 email
 		</h2>
-
 		<form action="https://formspree.io/dawid.galeziewski.ivanti@gmail.com" method="POST" class="contact-form">
 			<input class="contact-form__input" type="text" placeholder="Title" name="title">
 			<input class="contact-form__input" type="email" placeholder="Email" name="email">
@@ -209,7 +233,12 @@
 			<input class = "btn" value="Send" type="submit">
 		</form>
 	</section>
+	<!-- 6. CONTACT SECTION END-->
 
+
+
+
+	<!-- 7. FOOTER START-->
 	<footer class="footer">
 		<ul class="media">
 			<li class="media__item">
@@ -228,13 +257,21 @@
 			</li>
 		</ul>
 	</footer>
+	<!-- 7. FOOTER END-->
 
-	<!-- preloader -->
-	<script src="js/preloader.js"></script>
-	<!-- MENU LOGIC -->
-	<script src="./js/menu.js"></script>
-	<script src="js/folder-animation.js"></script>
-	<script src="js/popup-animation.js"></script>
+
+
+
+
+	<!-- 8. JAVASCRIP IMPORTS START -->
+		<!-- preloader -->
+		<script src="js/preloader.js"></script>
+		<!-- menu logic -->
+		<script src="./js/menu.js"></script>
+		<!-- projects animations -->
+		<script src="js/folder-animation.js"></script>
+		<script src="js/popup-animation.js"></script>
+	<!-- 8. JAVASCRIP IMPORTS END -->
     
 </body>
 </html>
