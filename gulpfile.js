@@ -1,32 +1,71 @@
 // Import modules
-const gulp = require('gulp'); 
-const sass = require('gulp-sass');
-const browserSync  = require('browser-sync').create();
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
+    // general
+    const gulp = require('gulp'); 
+    const browserSync  = require('browser-sync').create();
+    const sourcemaps = require('gulp-sourcemaps');
 
-// gulp.task('sass', () => { return gulp.src('app/scss/**/*.scss')
-// .pipe(sass())
-// .pipe(gulp.dest('app/css')); });
+    // css
+    const sass = require('gulp-sass');
+    const postcss = require('gulp-postcss');
+    const autoprefixer = require('autoprefixer');
+    const cleanCSS = require('gulp-clean-css');
 
-// gulp.task('watch', () => { 
-//     gulp.watch('app/scss/**/*.scss', gulp.series('sass')); 
-// });
 
+    // js
+    const babel = require('babel-core')
+    const browserify = require('browserify');
+    const babelify = require('babelify');
+    const source = require('vinyl-source-stream');
+    const buffer = require('vinyl-buffer');
+    const uglify = require('gulp-uglify');
+    const rename = require("gulp-rename");
 
 
 // compile scss into css
 function style(){
     // 1. Where is scss file?
     return gulp.src('app/scss/**/*.scss')
-    // 2. Compile sass file
-    .pipe(sass()).on('error', sass.logError)
-    // 3. Add prefixes to code
-    .pipe(postcss([autoprefixer]))
+    .pipe(sourcemaps.init())
+        // 2. Compile sass file
+        .pipe(sass()).on('error', sass.logError)
+        // 3. Add prefixes to code
+        .pipe(postcss([autoprefixer]))
+        // Minify the CSS
+        .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
     // 4. Where do I save the complied CSS?
     .pipe(gulp.dest('app/css'))
     // 5. Stream changes to all browsers
     .pipe(browserSync.stream())
+}
+
+function javascript(done){
+    const jsFolder = './app/pre-js/';
+    const index = 'index.js';
+    const jsDIST = './app/js';
+    const jsFILES = [index];
+
+
+    jsFILES.map(function(entry){
+        return browserify({
+            entries: [jsFolder + entry],
+            debug: true
+        })
+        .transform(babelify, {
+            presets:['@babel/env'],
+            sourceMaps: true
+        })
+        .bundle()
+        .pipe(source(entry))
+        .pipe(rename({extname: '.min.js'})) 
+        
+        .pipe(buffer())
+        .pipe(sourcemaps.init({loadMaps: true}))
+            .pipe(uglify({ compress: false }))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(jsDIST))
+    })
+    done()
 }
 
 // watcher
@@ -46,12 +85,13 @@ function watch(){
     // Watch for any changes in index files, reload browser on those changes
     gulp.watch('./*.html').on('change', browserSync.reload);
 
-    // Watch for javaScript changes, reload on change
-    gulp.watch('app/js/**/*.js').on('change', browserSync.reload);
+    // Watch for pre-javaScript changes, apply changes to the files on save
+    gulp.watch('app/pre-js/**/*.js', javascript).on('change', browserSync.reload);
 
 }
 
 
 // export tasks
 exports.style = style
+exports.javascript = javascript
 exports.watch = watch
