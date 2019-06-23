@@ -1,3 +1,5 @@
+// add image min to the project
+// https://www.freecodecamp.org/news/how-to-minify-images-with-gulp-gulp-imagemin-and-boost-your-sites-performance-6c226046e08e/
 // Import modules
     // general
     const gulp = require('gulp'); 
@@ -20,6 +22,8 @@
     const uglify = require('gulp-uglify');
     const rename = require("gulp-rename");
 
+    // images
+    const imagemin = require('gulp-imagemin')
 
 // compile scss into css
 function style(){
@@ -68,6 +72,23 @@ function javascript(done){
     done()
 }
 
+// minify images
+function images(done){
+    return gulp.src('./app/img/*')
+    .pipe(imagemin([
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({
+            plugins: [
+                {removeViewBox: true},
+                {cleanupIDs: false}
+            ]
+        })
+    ]))
+    .pipe(gulp.dest('./app/img-min'))
+}
+
 // watcher
 function watch(){
     // specify server to run
@@ -88,10 +109,13 @@ function watch(){
     // Watch for pre-javaScript changes, apply changes to the files on save
     gulp.watch('app/pre-js/**/*.js', javascript).on('change', browserSync.reload);
 
+    gulp.watch('./app/img/*', images);
+
 }
 
 
 // export tasks
 exports.style = style
 exports.javascript = javascript
+exports.images = images
 exports.watch = watch
