@@ -4,7 +4,7 @@
 .main-header {
     padding: $padding-small;
 
-	padding-top: 25vh;
+	padding-top: $padding-large;
 	background-color: $color-primary;
 	color: white;
     text-align: center;
@@ -27,7 +27,7 @@
     }
     
     &__title {
-        padding: $padding-large;
+        padding: 0 $padding-large;
         font-size: $size-title;
         font-weight: normal;
 
