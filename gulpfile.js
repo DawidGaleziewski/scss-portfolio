@@ -104,7 +104,7 @@ function watch(){
     gulp.watch('app/scss/**/*.scss', style);
 
     // Watch for any changes in index files, reload browser on those changes
-    gulp.watch('./*.html').on('change', browserSync.reload);
+    gulp.watch('./app/*.html').on('change', browserSync.reload);
 
     // Watch for pre-javaScript changes, apply changes to the files on save
     gulp.watch('app/pre-js/**/*.js', javascript).on('change', browserSync.reload);
