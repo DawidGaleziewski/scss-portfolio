@@ -1,5 +1,6 @@
 
 .preloader {
+    z-index: 3;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,16 +8,25 @@
     background-color: $color-primary;
     transition: opacity ease-out 0.5s;
 
-    .wrapper{
-        position: absolute;
+    .wrapper{ 
+        position: absolute;   
         width: 12rem;
         left: 0;
         right:0;
-        top: 20rem;
+        bottom: 17rem;
         margin-left: auto; 
         margin-right: auto;
         display: flex;
         justify-content: space-between;
+
+        @media(min-width: 30rem){
+            bottom : 0.5rem;
+        }
+
+        @media(min-width: 30rem) and (min-height: 30rem){
+           bottom: initial;
+            top: 10rem;
+        }
 
         &__box {
             position: relative;
