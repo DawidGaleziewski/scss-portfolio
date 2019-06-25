@@ -78,11 +78,9 @@
     &__image {
         transform: translateY($padding-medium);
 
-        @media(min-width: 30rem) and (min-height: 30rem){
+        @include screen-type(phone-medium-landscape){
             transform: translateY($padding-large);
-
         }
-
     }
 }
 
