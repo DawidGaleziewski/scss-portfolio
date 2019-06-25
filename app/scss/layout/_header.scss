@@ -27,13 +27,16 @@
     }
     
     &__title {
-        padding: 0 $padding-large;
         font-size: $size-title;
         font-weight: normal;
 
         &--decor {
             text-transform: uppercase;
             font-weight: bold;
+        }
+
+        @include screen-type(phone-small){
+            padding: 0;
         }
     }
 
@@ -77,7 +80,10 @@
 
     &__image {
         transform: translateY($padding-medium);
-
+        @include screen-type(phone-small){
+            max-width: 300px;
+        }
+        
         @include screen-type(phone-medium-landscape){
             transform: translateY($padding-large);
         }
