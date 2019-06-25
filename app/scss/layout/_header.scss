@@ -9,7 +9,7 @@
 	color: white;
     text-align: center;
 
-    @media(min-width: 30rem) and (min-height: 30rem){
+    @include screen-type(phone-medium-landscape){
         margin: 0 auto;
         position: relative;
         padding-bottom: 0;
