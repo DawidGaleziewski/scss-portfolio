@@ -34,10 +34,6 @@
             text-transform: uppercase;
             font-weight: bold;
         }
-
-        @include screen-type(phone-small){
-            padding: 0;
-        }
     }
 
     &__ribbon {

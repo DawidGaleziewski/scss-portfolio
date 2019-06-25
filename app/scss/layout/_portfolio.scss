@@ -10,23 +10,14 @@ $color-folder-primary: $color-primary;
 $color-folder-secondary: $color-secondary;
 
 .projects{
+    @extend %section;
+
     background-color: #fff;
 
     @include screen-type(phone-medium-landscape){
         max-width: $section-width-desktop;
         margin: 0 auto;
         padding-bottom: 5rem;
-    }
-
-    .title {
-        padding: $padding-large;
-        font-size: $size-title;
-        text-transform: uppercase;
-        text-align: center;
-
-        &--decor {
-            font-size: $size-title-decor;
-        }
     }
 
     .projects-wrapper {

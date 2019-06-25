@@ -14,6 +14,10 @@
         padding: $padding-large;
         font-size: $size-title;
         text-transform: uppercase;
+        @include screen-type(phone-small){
+            font-size: $size-title-decor;
+            padding: $padding-large 0;
+        }
     }
 }
 
