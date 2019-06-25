@@ -7,7 +7,7 @@
 	background-color: $color-complementary;
     color: $color-light;
 
-    @media(min-width: 30rem) and (min-height: 30rem){
+    @include screen-type(phone-medium-landscape){
         margin: 0 auto;
     }
 
