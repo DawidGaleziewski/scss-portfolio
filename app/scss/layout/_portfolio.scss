@@ -12,7 +12,7 @@ $color-folder-secondary: $color-secondary;
 .projects{
     background-color: #fff;
 
-    @media(min-width: 30rem) and (min-height: 30rem){
+    @include screen-type(phone-medium-landscape){
         max-width: $section-width-desktop;
         margin: 0 auto;
         padding-bottom: 5rem;
@@ -34,9 +34,10 @@ $color-folder-secondary: $color-secondary;
     
         margin: 0 auto;
 
-        @media(min-width: 30rem) and (min-height: 30rem){
+        @include screen-type(phone-medium-landscape){
             max-width: 60rem;
         }
+
 
         .project {
             padding: 2rem 1rem;
@@ -138,7 +139,7 @@ $color-folder-secondary: $color-secondary;
             height: 40vw;
             position: relative;
 
-            @media(min-width: 30rem) and (min-height: 30rem){
+            @include screen-type(phone-medium-landscape){
                 max-width: 60rem;
                 max-height: 30rem;
             }
@@ -152,7 +153,7 @@ $color-folder-secondary: $color-secondary;
                 background-color: $color-folder-secondary;
                 transition: transform 1s, box-shadow 0.5s;
                 
-                @media(min-width: 30rem) and (min-height: 30rem){
+                @include screen-type(phone-medium-landscape){
                     max-width: 60rem;
                     max-height: 30rem;
                 }

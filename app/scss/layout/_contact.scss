@@ -11,8 +11,7 @@
     &-form{
         margin: 0 $margin-medium;
 
-
-        @media(min-width: 30rem) and (min-height: 30rem){
+        @include screen-type(phone-medium-landscape){
             max-width: $section-width-desktop;
         }
 
@@ -25,12 +24,6 @@
             border-right: 3px solid $color-primary;
             border-bottom: 3px solid $color-primary;
             font-size: 1.5rem;
-
-            // @media(min-width: 30rem) and (min-height: 30rem){
-            //     width: 100%
-            // }
-
-
 
             &::placeholder{
                 color: $color-primary;

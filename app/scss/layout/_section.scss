@@ -4,23 +4,16 @@
 	padding: $padding-large $padding-small;
     text-align: center;
     padding: $padding-large $padding-small;
-    @media(min-width: 30rem) and (min-height: 30rem){
+
+    @include screen-type(phone-medium-landscape){
         max-width: $section-width-desktop;
         margin: $margin-large auto;
     }
-
-    // @media(min-width: 30rem) and (min-height: 30rem){
-    //     transform: translateY(-25vh);
-    // }
 
     .title{
         padding: $padding-large;
         font-size: $size-title;
         text-transform: uppercase;
-
-        // &--decor {
-        //     font-size: $size-title-decor;
-        // }
     }
 }
 

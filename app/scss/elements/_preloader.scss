@@ -19,15 +19,16 @@
         display: flex;
         justify-content: space-between;
 
-        @media(min-width: 30rem){
-            bottom : 0.5rem;
+
+        @include screen-type(phone-medium){
+          bottom : 0.5rem;
         }
 
-        @media(min-width: 30rem) and (min-height: 30rem){
-           bottom: initial;
-            top: 10rem;
+        @include screen-type(phone-medium-landscape){
+          bottom: initial;
+          top: 10rem;
         }
-
+        
         &__box {
             position: relative;
             margin: 3rem 0;
