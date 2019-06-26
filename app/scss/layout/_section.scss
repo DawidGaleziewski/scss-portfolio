@@ -1,6 +1,13 @@
 @import '../elements/buttons';
 
+@mixin section-shadow {
+    -webkit-box-shadow: 4px 7px 16px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 7px 16px -1px rgba(0,0,0,0.75);
+    box-shadow: 4px 7px 16px -1px rgba(0,0,0,0.75);
+}
+
 %section {
+    
     text-align: center;
     padding: $padding-large $padding-small;
 
@@ -8,6 +15,11 @@
         max-width: $section-width-desktop;
         margin: $margin-large auto;
     }
+
+    @include screen-type(desktop){
+        @include section-shadow;
+    }
+    
 
     .title{
         padding: $padding-large;
@@ -19,6 +31,8 @@
         }
     }
 }
+
+
 
 
 

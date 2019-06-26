@@ -83,6 +83,10 @@
         @include screen-type(phone-medium-landscape){
             transform: translateY($padding-large);
         }
+
+        @include screen-type(desktop){
+            transform: translateY($padding-large * 2);
+        }
     }
 }
 
