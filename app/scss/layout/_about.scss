@@ -17,6 +17,13 @@
         line-height: 1.5;
         margin: $margin-small;
         color: $color-light;
+        
+
+        @include screen-type(desktop){
+            max-width: 70%;
+            margin: $margin-small auto;
+        }
+        
     }
 
 

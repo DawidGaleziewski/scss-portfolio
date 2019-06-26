@@ -83,6 +83,11 @@ $color-folder-secondary: $color-secondary;
                 font-size: $size-description;
                 line-height: 1.5;
                 color: $color-light;
+
+                @include screen-type(desktop){
+                    max-width: 70%;
+                    margin: $margin-large auto;
+                }
             }
             .stack-list {
                 margin-top: $margin-small;
