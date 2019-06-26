@@ -3,12 +3,10 @@
     color: #fff;
     padding: 2rem 5rem;
 
-    .media,
-    .alternative-contact {
-        &__item {
-            list-style: none;
-            margin: $margin-small;
-        }
+    .info {
+        text-align: center;
+        font-size: $size-aside-text;
     }
+
 }
 
