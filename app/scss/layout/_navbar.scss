@@ -22,24 +22,34 @@ body {
 	top: 0;
 	width: 100vw;
 	background-color: $color-main;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: $padding-small $padding-medium;
-	&__logo{
-		text-align: bottom;
-		color: #fff;
-		font-size: 2.2rem;
-		@include screen-type(phone-medium){
-			margin-left: $margin-small;
+
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: $padding-small $padding-medium;
+		.nav-top__logo{
+			text-align: bottom;
+			color: #fff;
+			font-size: 2.2rem;
+			@include screen-type(phone-medium){
+				margin-left: $margin-small;
+			}
+			
 		}
-		
+	
+		@include screen-type(phone-medium){
+			flex-wrap: nowrap;
+			padding: $padding-small;
+		}
+	
+		@include screen-type(desktop){
+			max-width: $section-width-desktop;
+			margin:  0 auto;
+		}
 	}
 
-	@include screen-type(phone-medium){
-		flex-wrap: nowrap;
-		padding: $padding-small;
-	}
+
 }
 
  .menu {
