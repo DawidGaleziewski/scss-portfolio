@@ -129,7 +129,6 @@ $color-folder-secondary: $color-secondary;
         }
 
         .folder {
-            // display: none;
             margin: $padding-large auto;
             width: 95vw;
             height: 40vw;
@@ -141,6 +140,14 @@ $color-folder-secondary: $color-secondary;
             }
 
             .folder-cover{
+
+                .btn-git {
+                    @include button-theme($color-complementary);
+                    display: inline-block;
+                    position: absolute;
+                    top: 25%;
+                }
+
                 cursor: pointer;
                 border-radius: 0 0 5px 5px;
                 position: relative;
