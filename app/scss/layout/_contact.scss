@@ -20,8 +20,8 @@
             border: none;
             width: 100%;
             padding: 1rem;
-            border-right: 3px solid $color-primary;
-            border-bottom: 3px solid $color-primary;
+            border-right: 3px solid lighten($color-secondary, 10%);
+            border-bottom: 3px solid lighten($color-secondary, 30%);;
             font-size: 1.5rem;
 
             &::placeholder{
