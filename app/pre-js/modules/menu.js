@@ -18,7 +18,7 @@ class Menu{
                     if(menuItem.style.animation){
                         menuItem.style.animation= '';
                     } else{
-                        menuItem.style.animation = `linkFading 0.5s ease forwards ${index /7 + 1}s`;
+                        menuItem.style.animation = `linkFading 0.5s ease forwards ${index /7 + 0.5}s`;
                     }
                 });
             }
