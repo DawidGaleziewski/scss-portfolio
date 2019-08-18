@@ -34,7 +34,7 @@ class FolderAnimation{
       fadeInSections(sections);
     
       // Dynamically establish how low the folder should be moved
-      animationContainer.style.transform = `translateY(0)`;
+      animationContainer.style.transform = `translateY(32px)`;
       
     
       // dynamically establish how long should the folder move
