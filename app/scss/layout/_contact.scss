@@ -3,42 +3,47 @@
 
 /* PROJECTS START*/
 .contact {
-    @extend %section;
-    background-color: $color-secondary;
-    color: $color-light;
+  @extend %section;
+  background-color: $color-secondary;
+  color: $color-light;
 
-    &-form{
-        margin: 0 $margin-medium;
+  &-form {
+    margin: 0 $margin-medium;
 
-        @include screen-type(phone-medium-landscape){
-            max-width: $section-width-desktop;
-        }
-
-        &__input {
-            display: block;
-            margin: $margin-small auto;
-            border: none;
-            width: 100%;
-            padding: 1rem;
-            border-right: 3px solid lighten($color-secondary, 10%);
-            border-bottom: 3px solid lighten($color-secondary, 30%);;
-            font-size: 1.5rem;
-
-            &::placeholder{
-                color: $color-primary;
-                font-weight: bold;
-            }
-
-            &:focus {
-                color: $color-light;
-                background-color: $color-primary
-            }
-        }
-
-        .btn {
-            border: none;
-            @include button-theme($color-clickable-primary);
-        }
+    @include screen-type(phone-medium-landscape) {
+      max-width: $section-width-desktop;
     }
+
+    &__label {
+      display: block;
+      text-align: left;
+    }
+
+    &__input {
+      display: block;
+      margin: $margin-small auto;
+      border: none;
+      width: 100%;
+      padding: 1rem;
+      border-right: 3px solid lighten($color-secondary, 10%);
+      border-bottom: 3px solid lighten($color-secondary, 30%);
+      font-size: 1.5rem;
+
+      &::placeholder {
+        color: $color-primary;
+        font-weight: bold;
+      }
+
+      &:focus {
+        color: $color-light;
+        background-color: $color-primary;
+      }
+    }
+
+    .btn {
+      border: none;
+      @include button-theme($color-clickable-primary);
+    }
+  }
 }
 /* PROJECTS END*/
