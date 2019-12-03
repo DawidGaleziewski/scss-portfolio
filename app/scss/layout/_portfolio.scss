@@ -65,35 +65,6 @@ $color-folder-secondary: $color-secondary;
           margin: $margin-large auto;
         }
       }
-      .stack-list {
-        margin-top: $margin-small;
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-
-        &__item {
-          font-size: $size-title-decor;
-          .fa-html5 {
-            color: $color-html;
-            // animation: popup 1s linear 1s forwards;
-          }
-
-          .fa-css3-alt {
-            color: $color-css;
-          }
-
-          .fa-js {
-            color: $color-js;
-          }
-
-          .fa-sass {
-            color: #cf639a;
-          }
-          .fa-gulp {
-            color: #d34a47;
-          }
-        }
-      }
 
       .media {
         margin: 2rem auto;
@@ -163,6 +134,40 @@ $color-folder-secondary: $color-secondary;
           background-color: $color-folder-primary;
         }
       }
+    }
+  }
+}
+
+.stack-list {
+  margin-top: $margin-small;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  .stack-list__image-icon {
+    height: 2rem;
+  }
+
+  &__item {
+    font-size: $size-title-decor;
+    .fa-html5 {
+      color: $color-html;
+      // animation: popup 1s linear 1s forwards;
+    }
+
+    .fa-css3-alt {
+      color: $color-css;
+    }
+
+    .fa-js {
+      color: $color-js;
+    }
+
+    .fa-sass {
+      color: #cf639a;
+    }
+    .fa-gulp {
+      color: #d34a47;
     }
   }
 }
